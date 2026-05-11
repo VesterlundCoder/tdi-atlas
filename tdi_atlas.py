@@ -633,46 +633,104 @@ def sweep_dataset(bundle: DataBundle,
 
 # ── Dataset iterator ──────────────────────────────────────────────────────────
 
-def iter_datasets(args) -> List[DataBundle]:
-    bundles = []
+def stream_datasets(args, done_names: set, n_target: int = 0):
+    """
+    Generator that yields DataBundles one at a time, downloading as needed.
+    Skips names already in done_names. If n_target > 0 stops after that many yields.
+    """
+    n_yielded = 0
 
-    # sklearn
+    def _maybe_yield(b):
+        nonlocal n_yielded
+        if b is None:
+            return
+        if b.name in done_names:
+            return
+        if n_target and n_yielded >= n_target:
+            return
+        n_yielded += 1
+        yield b
+
+    # ── sklearn ───────────────────────────────────────────────────────────
     for name in SKLEARN_DATASETS:
         if args.datasets and name not in args.datasets:
             continue
+        if name in done_names:
+            continue
         try:
-            bundles.append(load_sklearn(name))
+            b = load_sklearn(name)
+            yield b
+            n_yielded += 1
+            if n_target and n_yielded >= n_target:
+                return
         except Exception as e:
             warnings.warn(f"sklearn {name}: {e}")
 
-    # Synthetic
+    # ── Synthetic ─────────────────────────────────────────────────────────
     for name in SYNTHETIC_DATASETS:
         if args.datasets and name not in args.datasets:
             continue
+        if name in done_names:
+            continue
         try:
-            bundles.append(load_synthetic(name))
+            b = load_synthetic(name)
+            yield b
+            n_yielded += 1
+            if n_target and n_yielded >= n_target:
+                return
         except Exception as e:
             warnings.warn(f"synthetic {name}: {e}")
 
-    # CMF
+    # ── CMF ───────────────────────────────────────────────────────────────
     if not args.datasets or "cmf" in args.datasets:
-        cmf_path = args.cmf_shards
-        if cmf_path and Path(cmf_path).exists():
-            b = load_cmf_hunt(cmf_path)
-            if b:
-                bundles.append(b)
+        if "cmf_hunt" not in done_names:
+            cmf_path = args.cmf_shards
+            if cmf_path and Path(cmf_path).exists():
+                b = load_cmf_hunt(cmf_path)
+                if b:
+                    yield b
+                    n_yielded += 1
+                    if n_target and n_yielded >= n_target:
+                        return
 
-    # OpenML
+    # ── Static OpenML registry ─────────────────────────────────────────────
     if _OPENML_OK:
         registry = OPENML_REGISTRY if not args.fast else OPENML_REGISTRY[:8]
         for (oid, name, domain) in registry:
             if args.datasets and name not in args.datasets:
                 continue
+            if name in done_names:
+                continue
+            if n_target and n_yielded >= n_target:
+                return
             b = load_openml(oid, name, domain)
             if b:
-                bundles.append(b)
+                yield b
+                n_yielded += 1
 
-    return bundles
+    # ── Dynamic OpenML catalog (fills up to n_target) ─────────────────────
+    if n_target and n_yielded < n_target and _OPENML_OK and not args.fast:
+        seen_names = set(done_names)
+        extra = iter_openml_catalog(
+            n_wanted=(n_target - n_yielded) + 30,
+            exclude_names=seen_names,
+            seed=args.seed,
+        )
+        for (oid, name, domain) in extra:
+            if n_target and n_yielded >= n_target:
+                return
+            if name in done_names or name in seen_names:
+                continue
+            b = load_openml(oid, name, domain)
+            if b:
+                seen_names.add(b.name)
+                yield b
+                n_yielded += 1
+
+
+def iter_datasets(args) -> List[DataBundle]:
+    """Legacy: load all datasets into a list. Used by --fast / --datasets modes."""
+    return list(stream_datasets(args, done_names=set(), n_target=0))
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -795,44 +853,17 @@ def main():
     print(f"  resume={args.resume}  out={args.out}")
     print("=" * 70)
 
-    # Build dataset list (static registry + optional catalog expansion)
-    bundles = iter_datasets(args)
+    n_target = args.n_datasets or 0
+    total_est = n_target or "?"
 
-    # Optional: pad up to --n-datasets using OpenML catalog
-    if args.n_datasets and _OPENML_OK and not args.fast:
-        static_names = {b.name for b in bundles}
-        n_needed = args.n_datasets - len(bundles)
-        if n_needed > 0:
-            extra = iter_openml_catalog(
-                n_wanted=n_needed + 20,  # ask for extra; some will fail to load
-                exclude_names=static_names,
-                seed=args.seed,
-            )
-            for (oid, name, domain) in extra:
-                if len(bundles) >= args.n_datasets:
-                    break
-                b = load_openml(oid, name, domain)
-                if b and b.name not in static_names:
-                    bundles.append(b)
-                    static_names.add(b.name)
-
-    # Filter out already-done datasets (resume mode)
-    if done_names:
-        before = len(bundles)
-        bundles = [b for b in bundles if b.name not in done_names]
-        print(f"  Skipping {before - len(bundles)} already-done datasets.")
-
-    total = len(bundles) + len(done_names)
-    todo = len(bundles)
-    print(f"\nTotal target: {total}  |  To process: {todo}  |  Already done: {len(done_names)}\n")
-
+    print(f"\nStreaming datasets lazily (download → sweep → write).  Target: {total_est}\n")
     if verbose:
-        header = (f"  {'#':<5} {'Dataset':<28} {'N':<6} {'D':<5} "
+        header = (f"  {'#':<6} {'Dataset':<30} {'N':<6} {'D':<5} "
                   f"{'acc':<7} {'TDI_VR':<9} {'TDI_rand':<10} {'ratio':<7} {'time'}")
         print(header)
         print("-" * len(header))
 
-    # Initialise CSV file (write header only if starting fresh)
+    # Initialise CSV (write header only if starting fresh)
     needs_header = not out_path.exists() or not args.resume
     if needs_header:
         write_result_row(out_path, {}, flat_keys, write_header=True)
@@ -841,19 +872,14 @@ def main():
     n_done = len(done_names)
     t_start = time.time()
 
-    for bundle in bundles:
+    for bundle in stream_datasets(args, done_names=done_names, n_target=n_target):
         n_done += 1
         try:
-            # Inject progress counter into verbose output
             if verbose:
-                elapsed_total = time.time() - t_start
-                eta = (elapsed_total / max(n_done - len(done_names), 1)) * max(todo - (n_done - len(done_names)), 0)
-                print(f"  [{n_done}/{total}]  ", end="", flush=True)
+                print(f"  [{n_done}/{total_est}]  ", end="", flush=True)
             r = sweep_dataset(bundle, epochs=args.epochs, seed=args.seed, verbose=verbose)
             all_results.append(r)
-            # Stream to CSV immediately (safe against crashes)
             write_result_row(out_path, r, flat_keys, write_header=False)
-            # Append to JSON incrementally
             with open(json_path, "a") as jf:
                 jf.write(json.dumps(r,
                     default=lambda x: float(x) if hasattr(x, "__float__") else str(x)) + "\n")
