@@ -67,57 +67,127 @@ SKLEARN_DATASETS = [
 # OpenML dataset IDs covering diverse domains.
 # Format: (openml_id, short_name, domain)
 OPENML_REGISTRY = [
-    # Biology / medicine
-    (61,    "ionosphere",       "physics"),
-    (40,    "sonar",            "physics"),
-    (1462,  "banknote",         "finance"),
-    (1479,  "hill_valley",      "synthetic"),
-    (1489,  "phoneme",          "speech"),
-    (1494,  "qsar_biodeg",      "chemistry"),
-    (1510,  "wdbc",             "medicine"),
-    (23,    "contraceptive",    "social"),
-    (1063,  "kc1",              "software"),
-    (1068,  "pc1",              "software"),
-    (1120,  "magic",            "physics"),
-    (1461,  "bank_marketing",   "finance"),
-    (4534,  "PhishingWebsites", "cybersecurity"),
-    (40983, "wilt",             "ecology"),
-    (1464,  "blood_transfusion","medicine"),
-    (1501,  "semeion",          "digits"),
-    (40975, "satellite",        "remote_sensing"),
-    (1590,  "adult",            "social"),
-    (4135,  "Amazon_reviews",   "nlp_features"),
-    (1169,  "electricity",      "energy"),
-    (44,    "spambase",         "nlp_features"),
-    (1475,  "first_order",      "synthetic"),
-    (11,    "balance_scale",    "psychology"),
-    (14,    "mfeat_fourier",    "vision"),
-    (16,    "mfeat_karhunen",   "vision"),
-    (18,    "mfeat_morphological","vision"),
-    (22,    "mfeat_zernike",    "vision"),
-    (37,    "diabetes",         "medicine"),
-    (54,    "vehicle",          "robotics"),
+    # ── Physics / signal ────────────────────────────────────────────────────
+    (61,    "ionosphere",           "physics"),
+    (40,    "sonar",                "physics"),
+    (1120,  "magic",                "physics"),
+    (60,    "waveform_5000",        "physics"),
+    (300,   "isolet",               "speech"),
+    (1489,  "phoneme",              "speech"),
+    (40685, "shuttle",              "aerospace"),
+    (1216,  "climate_model",        "engineering"),
+    (41138, "APSFailure",           "engineering"),
+    # ── Medicine / biology ───────────────────────────────────────────────────
+    (37,    "diabetes",             "medicine"),
+    (1510,  "wdbc",                 "medicine"),
+    (1464,  "blood_transfusion",    "medicine"),
+    (15,    "breast_w",             "medicine"),
+    (38,    "sick",                 "medicine"),
+    (55,    "hepatitis",            "medicine"),
+    (57,    "hypothyroid",          "medicine"),
+    (1466,  "cardiotocography",     "medicine"),
+    (1100,  "arrhythmia",           "medicine"),
+    (40981, "cardio2",              "medicine"),
+    (1217,  "yeast",                "biology"),
+    (1484,  "miceprotein",          "biology"),
+    (40706, "cancer_gene_expr",     "biology"),
+    (1504,  "steel_plates_fault",   "engineering"),
+    # ── Finance / social ─────────────────────────────────────────────────────
+    (1462,  "banknote",             "finance"),
+    (1461,  "bank_marketing",       "finance"),
+    (31,    "credit_g",             "finance"),
+    (29,    "credit_approval",      "finance"),
+    (1590,  "adult",                "social"),
+    (40701, "churn",                "finance"),
+    (40900, "Titanic",              "social"),
+    (23,    "contraceptive",        "social"),
+    (4154,  "Buzzinsocialmedia",    "social"),
+    (1075,  "credit_card_default",  "finance"),
+    # ── Software metrics ─────────────────────────────────────────────────────
+    (1063,  "kc1",                  "software"),
+    (1068,  "pc1",                  "software"),
+    (1049,  "pc4",                  "software"),
+    (1050,  "pc3",                  "software"),
+    (1056,  "mc1",                  "software"),
+    (1046,  "mozilla4",             "software"),
+    (1048,  "kc2",                  "software"),
+    (1067,  "kc3",                  "software"),
+    (1071,  "jm1",                  "software"),
+    # ── Vision / digits ──────────────────────────────────────────────────────
+    (554,   "mnist_784",            "vision"),
+    (40996, "fashion_mnist",        "vision"),
+    (6,     "letter",               "vision"),
+    (28,    "optdigits",            "vision"),
+    (32,    "pendigits",            "vision"),
+    (1501,  "semeion",              "digits"),
+    (14,    "mfeat_fourier",        "vision"),
+    (16,    "mfeat_karhunen",       "vision"),
+    (18,    "mfeat_morphological",  "vision"),
+    (22,    "mfeat_zernike",        "vision"),
+    (12,    "mfeat_factors",        "vision"),
+    (36,    "segment",              "vision"),
+    (40979, "movement_libras",      "vision"),
+    (40980, "pendigits2",           "vision"),
+    (41147, "fabert",               "vision"),
+    # ── NLP / text features ──────────────────────────────────────────────────
+    (44,    "spambase",             "nlp_features"),
+    (4135,  "Amazon_reviews",       "nlp_features"),
     (458,   "analcatdata_authorship","nlp_features"),
-    (469,   "analcatdata_dmft", "dentistry"),
-    (1038,  "gina_agnostic",    "synthetic"),
-    (1043,  "sylva_agnostic",   "ecology"),
-    (1046,  "mozilla4",         "software"),
-    (1049,  "pc4",              "software"),
-    (1050,  "pc3",              "software"),
-    (1056,  "mc1",              "software"),
-    (4154,  "Buzzinsocialmedia","social"),
-    (40496, "Thai_Student",     "education"),
-    (40668, "connect_4",        "games"),
-    (40685, "shuttle",          "aerospace"),
-    (40701, "churn",            "finance"),
-    (40900, "Titanic",          "social"),
-    (41138, "APSFailure",       "engineering"),
-    (41142, "christine",        "synthetic"),
-    (41143, "jasmine",          "synthetic"),
-    (41144, "madeline",         "synthetic"),
-    (41145, "philippine",       "synthetic"),
-    (41146, "sylvine",          "synthetic"),
-    (41147, "fabert",           "vision"),
+    (1468,  "cnae",                 "nlp_features"),
+    (4534,  "PhishingWebsites",     "cybersecurity"),
+    # ── Ecology / remote sensing ─────────────────────────────────────────────
+    (1043,  "sylva_agnostic",       "ecology"),
+    (40983, "wilt",                 "ecology"),
+    (40975, "satellite",            "remote_sensing"),
+    (69,    "satimage",             "remote_sensing"),
+    (40675, "gas_drift",            "chemistry"),
+    (1494,  "qsar_biodeg",          "chemistry"),
+    (1161,  "seismic_bumps",        "engineering"),
+    # ── Energy / games / misc ────────────────────────────────────────────────
+    (1169,  "electricity",          "energy"),
+    (40668, "connect_4",            "games"),
+    (3,     "kr_vs_kp",             "games"),
+    (50,    "tic_tac_toe",          "games"),
+    (24,    "mushroom",             "biology"),
+    (11,    "balance_scale",        "psychology"),
+    (53,    "heart_statlog",        "medicine"),
+    (10,    "lymph",                "medicine"),
+    (2,     "anneal",               "engineering"),
+    (21,    "car",                  "engineering"),
+    (48,    "australian",           "finance"),
+    (70,    "zoo",                  "biology"),
+    (41,    "glass",                "materials"),
+    (42,    "soybean",              "agriculture"),
+    (46,    "splice",               "genomics"),
+    (188,   "eucalyptus",           "ecology"),
+    (54,    "vehicle",              "robotics"),
+    (469,   "analcatdata_dmft",     "dentistry"),
+    (1038,  "gina_agnostic",        "synthetic"),
+    (1478,  "har",                  "robotics"),
+    (1497,  "wall_robot",           "robotics"),
+    (1473,  "ilpd",                 "medicine"),
+    (1476,  "nomao",                "nlp_features"),
+    (1487,  "ozone",                "environment"),
+    (1475,  "first_order",          "synthetic"),
+    (1479,  "hill_valley",          "synthetic"),
+    (40496, "Thai_Student",         "education"),
+    (1242,  "eye_movements",        "neuroscience"),
+    (40691, "wine_quality_red",     "food"),
+    (40693, "wine_quality_white",   "food"),
+    (1480,  "volkert",              "synthetic"),
+    (1491,  "100_plants_texture",   "ecology"),
+    (1492,  "100_plants_margin",    "ecology"),
+    (1241,  "synthetic_control",    "synthetic"),
+    (1563,  "gesture_phase",        "robotics"),
+    (1568,  "eeg_eye_state",        "neuroscience"),
+    (40710, "hapt",                 "robotics"),
+    (40711, "vowel_context",        "speech"),
+    (40984, "australian2",          "finance"),
+    (41142, "christine",            "synthetic"),
+    (41143, "jasmine",              "synthetic"),
+    (41144, "madeline",             "synthetic"),
+    (41145, "philippine",           "synthetic"),
+    (41146, "sylvine",              "synthetic"),
 ]
 
 SYNTHETIC_DATASETS = [
@@ -607,14 +677,86 @@ def iter_datasets(args) -> List[DataBundle]:
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+def iter_openml_catalog(n_wanted: int, exclude_names: set,
+                         seed: int = 42) -> List[Tuple[int, str, str]]:
+    """
+    Dynamically query OpenML for classification datasets not already in
+    OPENML_REGISTRY, filtered to viable size/feature ranges.
+    Returns up to n_wanted (id, name, domain) tuples.
+    """
+    if not _OPENML_OK:
+        return []
+    try:
+        import pandas as pd
+        print(f"  Querying OpenML catalog for up to {n_wanted} additional datasets...")
+        df = openml.datasets.list_datasets(output_format="dataframe")
+        # Filter to classification-compatible datasets
+        df = df[
+            (df["NumberOfInstances"].between(150, 100_000)) &
+            (df["NumberOfFeatures"].between(3, 500)) &
+            (df["NumberOfClasses"].between(2, 50)) &
+            (df["NumberOfMissingValues"] < df["NumberOfInstances"] * 0.3)
+        ].copy()
+        # Exclude already-registered names
+        df["name_lower"] = df["name"].str.lower().str.replace(r"[^a-z0-9]", "_", regex=True)
+        already = {n.lower().replace("-","_").replace(" ","_") for n in exclude_names}
+        df = df[~df["name_lower"].isin(already)]
+        # Deduplicate by name, prefer newer versions
+        df = df.sort_values("version", ascending=False).drop_duplicates(subset="name")
+        # Sample deterministically
+        df = df.sample(frac=1, random_state=seed).head(n_wanted)
+        result = []
+        for _, row in df.iterrows():
+            safe_name = str(row["name"]).replace("-","_").replace(" ","_")[:32]
+            result.append((int(row["did"]), safe_name, "openml_catalog"))
+        print(f"  Catalog returned {len(result)} additional dataset candidates.")
+        return result
+    except Exception as e:
+        warnings.warn(f"OpenML catalog query failed: {e}")
+        return []
+
+
+def load_existing_results(out_path: Path) -> set:
+    """Return set of dataset names already written to the output CSV."""
+    if not out_path.exists():
+        return set()
+    import csv
+    done = set()
+    try:
+        with open(out_path) as f:
+            for row in csv.DictReader(f):
+                name = row.get("dataset")
+                if name:
+                    done.add(name)
+    except Exception:
+        pass
+    return done
+
+
+def write_result_row(out_path: Path, result: Dict, flat_keys: List[str],
+                     write_header: bool = False):
+    """Append a single result row to the CSV (streaming write)."""
+    import csv
+    mode = "w" if write_header else "a"
+    with open(out_path, mode, newline="") as f:
+        w = csv.DictWriter(f, fieldnames=flat_keys, extrasaction="ignore")
+        if write_header:
+            w.writeheader()
+        w.writerow(result)
+
+
 def parse_args():
     p = argparse.ArgumentParser(description="TDI Atlas — cross-domain topology mapping")
     p.add_argument("--fast", action="store_true",
                    help="Quick mode: 10 datasets, 50 epochs")
+    p.add_argument("--n-datasets", type=int, default=None,
+                   help="Target total number of datasets (fills up with OpenML catalog)")
     p.add_argument("--epochs", type=int, default=100)
     p.add_argument("--datasets", nargs="+", default=None,
                    help="Specific dataset names to run")
     p.add_argument("--out", default="results/tdi_atlas.csv")
+    p.add_argument("--resume", action="store_true",
+                   help="Skip datasets already present in the output CSV")
     p.add_argument("--cmf-shards", type=str,
                    default="/Users/davidsvensson/Desktop/rd-lumi-z3/cmf_loop_project/hunt_shards",
                    help="Path to CMF hunt_shards/ directory")
@@ -632,35 +774,6 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     json_path = out_path.with_suffix(".json")
 
-    verbose = not args.quiet
-    print("=" * 70)
-    print("TDI ATLAS — Topological Deformation Index Cross-Domain Mapping")
-    print(f"  epochs={args.epochs}  fast={args.fast}  out={args.out}")
-    print("=" * 70)
-
-    bundles = iter_datasets(args)
-    print(f"\nDatasets loaded: {len(bundles)}\n")
-    if verbose:
-        header = (f"  {'Dataset':<28} {'N':<6} {'D':<5} "
-                  f"{'acc':<7} {'TDI_VR':<9} {'TDI_rand':<10} {'ratio':<7} {'time'}")
-        print(header)
-        print("-" * len(header))
-
-    all_results = []
-    for bundle in bundles:
-        try:
-            r = sweep_dataset(bundle, epochs=args.epochs, seed=args.seed, verbose=verbose)
-            all_results.append(r)
-        except Exception as e:
-            warnings.warn(f"Failed on {bundle.name}: {e}")
-
-    # Save JSON
-    with open(json_path, "w") as f:
-        json.dump(all_results, f, indent=2,
-                  default=lambda x: float(x) if hasattr(x, "__float__") else str(x))
-
-    # Save CSV
-    import csv
     flat_keys = [
         "dataset", "domain", "n_samples", "n_features", "n_classes",
         "accuracy", "tdi_vr_h0", "tdi_vr_h1", "tdi_alpha_h0", "tdi_alpha_h1",
@@ -668,15 +781,92 @@ def main():
         "input_entropy_h0", "input_entropy_h1",
         "input_knn_purity", "final_knn_purity", "purity_gain",
     ]
-    with open(out_path, "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=flat_keys, extrasaction="ignore")
-        w.writeheader()
-        w.writerows(all_results)
 
+    # Resume: find already-completed datasets
+    done_names: set = set()
+    if args.resume and out_path.exists():
+        done_names = load_existing_results(out_path)
+        print(f"  Resume mode: {len(done_names)} datasets already in {out_path}")
+
+    verbose = not args.quiet
+    print("=" * 70)
+    print("TDI ATLAS — Topological Deformation Index Cross-Domain Mapping")
+    print(f"  epochs={args.epochs}  fast={args.fast}  n_datasets={args.n_datasets}")
+    print(f"  resume={args.resume}  out={args.out}")
+    print("=" * 70)
+
+    # Build dataset list (static registry + optional catalog expansion)
+    bundles = iter_datasets(args)
+
+    # Optional: pad up to --n-datasets using OpenML catalog
+    if args.n_datasets and _OPENML_OK and not args.fast:
+        static_names = {b.name for b in bundles}
+        n_needed = args.n_datasets - len(bundles)
+        if n_needed > 0:
+            extra = iter_openml_catalog(
+                n_wanted=n_needed + 20,  # ask for extra; some will fail to load
+                exclude_names=static_names,
+                seed=args.seed,
+            )
+            for (oid, name, domain) in extra:
+                if len(bundles) >= args.n_datasets:
+                    break
+                b = load_openml(oid, name, domain)
+                if b and b.name not in static_names:
+                    bundles.append(b)
+                    static_names.add(b.name)
+
+    # Filter out already-done datasets (resume mode)
+    if done_names:
+        before = len(bundles)
+        bundles = [b for b in bundles if b.name not in done_names]
+        print(f"  Skipping {before - len(bundles)} already-done datasets.")
+
+    total = len(bundles) + len(done_names)
+    todo = len(bundles)
+    print(f"\nTotal target: {total}  |  To process: {todo}  |  Already done: {len(done_names)}\n")
+
+    if verbose:
+        header = (f"  {'#':<5} {'Dataset':<28} {'N':<6} {'D':<5} "
+                  f"{'acc':<7} {'TDI_VR':<9} {'TDI_rand':<10} {'ratio':<7} {'time'}")
+        print(header)
+        print("-" * len(header))
+
+    # Initialise CSV file (write header only if starting fresh)
+    needs_header = not out_path.exists() or not args.resume
+    if needs_header:
+        write_result_row(out_path, {}, flat_keys, write_header=True)
+
+    all_results: List[Dict] = []
+    n_done = len(done_names)
+    t_start = time.time()
+
+    for bundle in bundles:
+        n_done += 1
+        try:
+            # Inject progress counter into verbose output
+            if verbose:
+                elapsed_total = time.time() - t_start
+                eta = (elapsed_total / max(n_done - len(done_names), 1)) * max(todo - (n_done - len(done_names)), 0)
+                print(f"  [{n_done}/{total}]  ", end="", flush=True)
+            r = sweep_dataset(bundle, epochs=args.epochs, seed=args.seed, verbose=verbose)
+            all_results.append(r)
+            # Stream to CSV immediately (safe against crashes)
+            write_result_row(out_path, r, flat_keys, write_header=False)
+            # Append to JSON incrementally
+            with open(json_path, "a") as jf:
+                jf.write(json.dumps(r,
+                    default=lambda x: float(x) if hasattr(x, "__float__") else str(x)) + "\n")
+        except Exception as e:
+            warnings.warn(f"Failed on {bundle.name}: {e}")
+
+    elapsed_total = time.time() - t_start
     print(f"\n{'='*70}")
-    print(f"DONE  {len(all_results)} datasets processed")
-    print(f"  Atlas CSV → {out_path}")
-    print(f"  Atlas JSON → {json_path}")
+    print(f"DONE  {len(all_results)} new datasets processed  "
+          f"(total in file: {len(all_results)+len(done_names)})")
+    print(f"  Atlas CSV  → {out_path}")
+    print(f"  Atlas JSONL → {json_path}")
+    print(f"  Wall time: {elapsed_total/60:.1f} min")
     print(f"{'='*70}")
 
 
