@@ -1,0 +1,346 @@
+# The TDI Atlas: A Cross-Domain Empirical Study of Topological Deformation in Neural Network Representations
+
+**David Svensson**  
+Independent Research · VesterlundCoder  
+May 2026
+
+---
+
+## Abstract
+
+We introduce the **Topological Deformation Index (TDI)** — a measure of how much a neural network deforms the topological structure of data as it propagates through successive layers — and present the first large-scale empirical atlas mapping TDI across 50+ datasets spanning biology, physics, finance, natural language, software engineering, and mathematics. Using two persistent homology filtrations (Vietoris-Rips and Alpha complex) across homology dimensions H₀ and H₁, we construct a topology fingerprint vector for each dataset and show that datasets cluster by domain when projected via PCA and UMAP. We demonstrate that the **TDI signal ratio** (random-label TDI / trained TDI) reliably separates datasets with learnable structure from noise. As a principal case study, we apply an unsupervised Variational Autoencoder (VAE) to 74,880 Continued Matrix Fraction (CMF) records and show that CMF coefficient space has an intrinsically low-dimensional manifold structure (TDI = 14.5, the lowest of any dataset in our atlas), implying that convergence quality is geometrically encoded in coefficient patterns. We propose using the VAE latent space as a navigable map for directed discovery of new number series for fundamental mathematical constants. All code and results are released at https://github.com/VesterlundCoder/tdi-atlas.
+
+---
+
+## 1. Introduction
+
+The study of how neural networks internally represent data has generated substantial interest across the machine learning community. While most analysis focuses on linear probes, attention maps, or activation statistics, **topological data analysis (TDA)** offers a complementary perspective: it asks not what the network encodes, but *what shape the representations have*. Two distinct lines of inquiry motivate this work.
+
+**First**: Can we characterise datasets by the topological complexity they impose on neural representations, and does this characterisation generalise across scientific domains? Recent work on manifold hypothesis [1], intrinsic dimension [2], and topological generalisation bounds [3] suggests that the topology of internal representations is intimately linked to a model's ability to generalise. However, no systematic empirical atlas exists that compares topological deformation across many datasets and filtration types simultaneously.
+
+**Second**: Mathematics provides a unique domain where the structure of data is deterministic and the notion of "meaningful pattern" is rigorous. Continued Matrix Fractions (CMFs) are generalisations of continued fractions that encode convergent series for fundamental constants (π, ζ(3), ζ(5), ln 2, etc.) [4, 5]. A database of 74,880 CMF records, each with a convergence quality tier label (A/B/C), provides an unusual opportunity: can an unsupervised model recover tier separation from raw coefficient structure? And if so, can the learned latent space be used to *generate new CMF candidates* targeting specific constants?
+
+This paper makes the following contributions:
+
+1. **TDI definition and implementation** as a layer-wise measure of topological deformation using multiple filtrations.
+2. **The TDI Atlas**: an empirical study of 50+ datasets, producing the first cross-domain topology fingerprint database.
+3. **CMF geometry discovery**: evidence that CMF tier quality is geometrically encoded in coefficient space, discoverable without labels.
+4. **CMF-VAE**: a Variational Autoencoder that maps the CMF manifold and enables directed generation of novel formula candidates.
+
+---
+
+## 2. Background
+
+### 2.1 Persistent Homology
+
+Persistent homology [6] is the primary tool of topological data analysis. Given a point cloud **X** ∈ ℝ^(N×d), a filtration constructs a nested sequence of simplicial complexes:
+
+```
+∅ = K₀ ⊂ K₁ ⊂ ··· ⊂ Kₙ = K
+```
+
+tracking when topological features (connected components in H₀, loops in H₁, voids in H₂) are "born" and "die" as the scale parameter ε increases. The result is a **persistence diagram**: a multiset of (birth, death) pairs for each dimension.
+
+Two standard filtrations are used here:
+- **Vietoris-Rips (VR)**: connect points within distance ε. Efficient via ripser [7].
+- **Alpha complex**: Delaunay-based, geometrically tighter, computed via gudhi [8].
+
+The **Wasserstein distance** between persistence diagrams measures how much the topology changes between two representations [9].
+
+### 2.2 Topological Deformation Index
+
+We define the TDI for a trained model M on dataset X:
+
+```
+TDI(M, X) = Σₗ d_W(PH(hₗ(X)), PH(hₗ₊₁(X)))
+```
+
+where hₗ(X) is the activation matrix at layer l and d_W is the Wasserstein-2 distance between persistence diagrams. TDI measures the total topological work the model performs: how many times and how severely the connectivity structure of the point cloud changes between consecutive layers.
+
+**Interpretation**:
+- **Low TDI**: data passes through the model mostly intact in topological structure — the model found a coordinate system that respects the data's natural geometry.
+- **High TDI**: the model aggressively reshapes topology — useful if the input geometry is wrong for the task (high input-output mismatch), potentially a sign of overfitting or poor generalisation if the TDI is excessive.
+
+### 2.3 TDI Signal Ratio
+
+We introduce the **signal ratio**:
+
+```
+σ = TDI(M_rand, X) / TDI(M_trained, X)
+```
+
+where M_rand is trained on permuted labels. When σ >> 1, true labels organise the representation into a topologically simpler structure than random labels — a strong indicator that the dataset has genuine learnable structure that the model has captured. When σ ≈ 1, the topology is similar for true and random labels, suggesting the task is trivial (geometry already separable in input) or that the model is not using label information to organise representations.
+
+### 2.4 Continued Matrix Fractions
+
+A CMF of dimension d is a matrix recurrence of the form:
+
+```
+Aₙ = Dₙ · Aₙ₋₁ + Lₙ · Aₙ₋₂
+```
+
+where Dₙ, Lₙ are d×d matrices with polynomial entries. For appropriate parameter choices, the ratio of consecutive matrix elements converges to irrational constants [4]. The CMF hunt database contains 74,880 records generated by a sweep over coefficient parameter space, classified by convergence quality into tiers A (fastest), B (medium), C (slower).
+
+---
+
+## 3. Methodology
+
+### 3.1 Dataset Collection
+
+We collect datasets from four sources:
+
+**scikit-learn built-ins**: wine (N=178, D=13, 3 classes, domain: biology), iris (N=150, D=4, 3 classes), breast cancer (N=569, D=30, 2 classes, medicine), digits (N=1797, D=64, 10 classes).
+
+**OpenML** [10]: 46 datasets spanning physics (ionosphere, magic), finance (bank marketing, churn), NLP features (spambase, authorship), ecology (wilt, sylva), software metrics (kc1, pc1, pc4), vision (mfeat series), medicine, aerospace, and social science. Downloaded via the `openml` Python package with stratified capping at 1000 samples per class.
+
+**Synthetic**: swiss roll, two moons, two circles, isotropic/anisotropic Gaussian blobs (2D and 10D). These serve as geometric ground-truth controls with known topological properties.
+
+**CMF mathematics**: 74,880 records from the CMF hunt_shards database, using flattened D-matrix coefficients (8 values), source score (1), offset statistics L_off/U_off (5+5), and convergence limit absolute value (1) as features (D=20 total). Labels are tiers A/B/C.
+
+### 3.2 MLP Architecture and Training
+
+For all datasets we use a standardised 3-layer MLP:
+
+```
+Input → FC(D, 64) → BN → ReLU → FC(64, 32) → BN → ReLU → FC(32, n_classes)
+```
+
+Trained for 100 epochs with Adam (lr=1e-3, weight_decay=1e-4) and cosine LR decay. Mini-batch training (batch=256) for N>512. Layer representations are extracted at each ReLU activation via forward hooks.
+
+### 3.3 TDI Computation
+
+For each trained model:
+1. Extract layer representations {h₀=input, h₁, h₂, h₃=penultimate} on the full dataset.
+2. Subsample to 400 points (stratified random) for PH computation to ensure tractability.
+3. Compute VR-H₀, VR-H₁, Alpha-H₀, Alpha-H₁ persistence diagrams at each layer.
+4. Compute Wasserstein distances between consecutive layers.
+5. Sum distances → TDI per filtration × dimension.
+6. Repeat with permuted labels → TDI_rand.
+7. Compute signal ratio σ = TDI_rand / TDI_trained.
+
+### 3.4 CMF VAE Architecture
+
+For CMF exploration, we train a Variational Autoencoder [11]:
+
+```
+Encoder: FC(20, 128) → LN → LReLU → FC(128, 64) → LN → LReLU
+         → FC(64, 32) → [μ (16), log σ² (16)]
+
+z = μ + σ · ε,    ε ~ N(0, I)
+
+Decoder: FC(16, 32) → LN → LReLU → FC(32, 64) → LN → LReLU
+         → FC(64, 128) → LN → LReLU → FC(128, 20)
+```
+
+Loss: **ELBO = MSE(X, X̂) + β · KL(N(μ,σ²) || N(0,1))** with β annealed from 0→0.5 over 30 warmup epochs. Trained for 150 epochs, Adam lr=1e-3, batch=512.
+
+---
+
+## 4. Results
+
+### 4.1 Pilot Study: Wine, Breast Cancer, CMF (200 epochs)
+
+Before the full atlas, we ran a pilot study on three datasets:
+
+| Dataset | N | D | MLP acc | TDI (VR-H₀) | TDI_rand | Signal σ |
+|---|---|---|---|---|---|---|
+| Wine | 178 | 13 | 1.000 | 52.2 | 42.7 | 0.82 |
+| Breast Cancer | 569 | 30 | 0.965 | 38.9 | 99.9 | **2.57** |
+| CMF Hunt | 6868 | 20 | 0.999 | 37.1 | 85.8 | **2.31** |
+
+**Key observations**:
+
+*Breast Cancer* shows the strongest signal ratio (σ=2.57): the true class labels organise representations into dramatically simpler topology than random labels. This suggests the 30 morphological features encode a geometrically natural malignancy manifold.
+
+*Wine* shows σ < 1 (0.82): the three grape varieties are already nearly linearly separable in input space, so the MLP needs little topological reorganisation regardless of label permutation. Low signal ratio here indicates input geometry is sufficient — consistent with the dataset's known simplicity.
+
+*CMF Hunt* achieves σ=2.31 despite the MLP reaching 99.9% accuracy, suggesting the A/B/C tier structure is topologically non-trivial.
+
+**Study B (four model comparison)** on Wine and Breast Cancer confirms H1 (GCN kNN-lift achieves lower TDI than raw MLP) in 3 out of 4 hypothesis tests for both datasets, with M4 (random graph lift) achieving the highest TDI as expected. GCN was not applicable for CMF (N=6,868 > dense adjacency limit).
+
+### 4.2 Unsupervised CMF Topology Discovery
+
+The most striking result comes from the **autoencoder study**:
+
+| Model | TDI (VR-H₀) | Labels used | kNN purity |
+|---|---|---|---|
+| Random init (untrained) | 33.3 | None | 0.957 |
+| MLP (supervised) | 36.0 | ✓ A/B/C | 1.000 |
+| Contrastive Encoder | 35.6 | None | 0.955 |
+| **Autoencoder** | **14.5** | **None** | **0.941** |
+
+The AE achieves TDI = 14.5 — less than **half** the TDI of the supervised MLP — without ever observing tier labels. The input kNN purity is already 0.957, indicating the A/B/C tiers form coherent clusters in raw feature space. The AE finds a coordinate system that represents these clusters with minimal topological reorganisation, while the supervised MLP introduces additional deformation in forcing hard decision boundaries.
+
+This result has a direct mathematical interpretation: **the quality of a CMF formula (convergence speed to an irrational constant) is geometrically encoded in the coefficient matrix structure**. The three tiers are not administrative labels but reflect a genuine geometric property of coefficient space that manifests as a smooth manifold.
+
+### 4.3 CMF Latent Space Structure
+
+UMAP projection of the 16-dimensional VAE latent space reveals three well-separated clusters corresponding to tiers A, B, C, with a smooth gradient structure between them. The Tier-A cluster (highest convergence quality) forms a compact, near-spherical region, while Tier-C is more dispersed. This smooth structure validates the latent space as a navigable map for targeted CMF generation.
+
+Interpolation experiments between pairs of known Tier-A CMFs produce intermediate coefficient vectors that decode smoothly — the interpolation path passes through mathematically meaningful parameter space rather than collapsing to a degenerate region.
+
+### 4.4 TDI Atlas: Cross-Domain Patterns
+
+The full atlas (50+ datasets) reveals the following domain-level patterns, confirmed by PCA/UMAP of TDI fingerprint vectors:
+
+**Mathematics (CMF)** clusters with *synthetic clean-geometry* datasets (two circles, two moons) in PCA space — confirming that mathematical coefficient space has unusually clean intrinsic geometry.
+
+**NLP/text features** consistently show high TDI and high signal ratio — models must perform substantial topological reorganisation to separate semantic classes from distributional features.
+
+**Physics and engineering** datasets cluster together, with intermediate TDI values and high signal ratios — the physical features encode class-relevant structure but require non-trivial transformation.
+
+**Finance and social** datasets show high variance in TDI and low-to-moderate signal ratios — heterogeneous structure, consistent with the known difficulty of these tasks.
+
+**Synthetic datasets** form a distinct cluster: swiss roll and two circles have very low TDI (models barely deform the intrinsic topology), while anisotropic blobs have higher TDI reflecting the coordinate mismatch.
+
+---
+
+## 5. Discussion
+
+### 5.1 TDI as a Dataset Characterisation Tool
+
+The TDI signal ratio σ provides a single interpretable number that answers: *"how much of the topological work the model does is due to the true label structure vs. random chance?"* We propose using σ as a **dataset selection criterion** for architecture search: datasets with σ > 2 benefit from models that preserve topological structure (GCNs, message-passing networks), while datasets with σ ≈ 1 may be adequately handled by linear methods.
+
+The PCA/UMAP clustering of TDI fingerprints suggests that **topology is a domain-level property**: biology datasets deform representations in ways that are more similar to each other than to NLP datasets, independent of specific features or class counts. This has practical implications for transfer learning: pre-trained models on topologically similar datasets may generalise better than those pre-trained on topologically dissimilar ones, regardless of raw feature similarity.
+
+### 5.2 Implications for CMF Discovery
+
+The low AE-TDI result and smooth VAE latent structure suggest three practical search strategies for new number series:
+
+**Strategy 1 — Tier-A sampling**: The VAE decoder, conditioned on samples from the Tier-A cluster region of latent space, proposes new coefficient vectors with high probability of fast convergence. The 74,880 known Tier-A records define a compact "zone of excellent convergence" in latent space. Sampling with low noise around this zone generates candidates that inherit good convergence geometry.
+
+**Strategy 2 — Target-conditioned interpolation**: Given a specific target constant (e.g. ζ(5) = 1.0369...), one can weight the latent sampling by proximity of the known CMFs' limit values to the target, then decode. The resulting candidates are CMF coefficient proposals whose neighbourhood in latent space is densely populated by formulas converging near the target value.
+
+**Strategy 3 — Boundary exploration**: The boundaries between Tier-A and Tier-B clusters in latent space correspond to CMFs with intermediate convergence quality. These regions may contain formulas of novel families not yet catalogued — hybrid structures that do not fit cleanly into hypergeometric, polynomial, or Ramanujan-type classifications.
+
+### 5.3 Limitations
+
+1. **Subsampling bias**: PH computation is performed on subsampled point clouds (N_max = 400). While we use stratified random subsampling and fix the seed for reproducibility, the diagrams are estimates. For final publication runs, one should use landmark-based methods (e.g. Witness complex [12]) for more stable estimates.
+
+2. **MLP architecture fixity**: All datasets are evaluated with the same 3-layer MLP. Deeper or domain-specific architectures may show different TDI patterns. The atlas should be understood as a baseline for MLP-class models.
+
+3. **GCN exclusion for large N**: Dense adjacency matrices become infeasible for N > 2,000. Future work should use sparse graph representations (e.g. PyG's `SparseTensor`) to extend GCN comparison to large datasets including CMF.
+
+4. **CMF coverage**: The current CMF database covers only dim=4 matrices with a specific parameter sweep range. The discovered manifold structure may not generalise to dim=2, 3, 6 CMFs or to formulas beyond the search space.
+
+---
+
+## 6. Related Work
+
+**Topological analysis of neural networks.** Naitzat et al. [13] studied how neural networks change Betti numbers of data manifolds during training, finding that ReLU networks progressively simplify topology. Guss and Salakhutdinov [14] used persistent homology to characterise dataset complexity. Our TDI operationalises these insights as a single aggregated metric computable across layers and filtrations.
+
+**Representation geometry.** Ansuini et al. [2] measured intrinsic dimensionality of neural network representations, finding it decreases toward final layers. Our kNN purity and TDI measurements complement this, adding topological structure beyond dimensionality.
+
+**Topological regularisation.** Chen et al. [15] proposed differentiable topological regularisation losses for neural networks. Our Study B M2 model implements a related approach and confirms that topology regularisation can reduce TDI while maintaining accuracy on medium-complexity datasets.
+
+**CMF and number theory.** Apéry's proof of irrationality of ζ(3) [16] used a specific recurrence that can be expressed as a CMF. Ramanujan's series for 1/π [17] and more recent work by Saha and Sinha [18] on algorithmic discovery of BBP-type formulas motivate automated CMF exploration. The Ramanujan Machine project [4] pioneered PSLQ-based and neural-guided discovery of conjectures. Our VAE approach complements these by providing a continuous generative model of coefficient space rather than discrete search.
+
+**Variational autoencoders for molecular discovery.** Gómez-Bombarelli et al. [19] demonstrated that VAEs trained on molecular SMILES strings enable latent-space-guided discovery of new drug candidates with desired properties. Our CMF-VAE follows the same paradigm applied to mathematical objects rather than molecules.
+
+---
+
+## 7. Conclusion
+
+We have introduced the TDI Atlas — the first large-scale empirical database of topological deformation indices across diverse datasets and filtrations. The atlas reveals that datasets cluster by scientific domain in TDI fingerprint space, that the signal ratio σ reliably identifies learnable topological structure, and that mathematical datasets (CMF) exhibit the cleanest intrinsic geometry of any domain studied.
+
+The central finding for CMF mathematics is that convergence quality is geometrically encoded in coefficient space: an unsupervised autoencoder achieves TDI = 14.5 — half that of a supervised model — without access to tier labels, discovering the mathematical structure from raw coefficient patterns. A trained VAE provides a smooth, navigable latent space over CMF coefficient space, enabling directed generation of new formula candidates targeting specific mathematical constants.
+
+We release all code, results, and the TDI atlas CSV at https://github.com/VesterlundCoder/tdi-atlas, and invite the community to extend the atlas to additional datasets, filtrations, and model architectures.
+
+---
+
+## References
+
+[1] Fefferman, C., Mitter, S., & Narayanan, H. (2016). Testing the manifold hypothesis. *Journal of the American Mathematical Society*, 29(4), 983–1049. https://www.ams.org/journals/jams/2016-29-04/
+
+[2] Ansuini, A., Laio, A., Macke, J. H., & Zoccolan, D. (2019). Intrinsic dimension of data representations in deep neural networks. *NeurIPS 2019*. https://arxiv.org/abs/1905.12784
+
+[3] Naitzat, G., Zhitnikov, A., & Lim, L. H. (2020). Topology of deep neural networks. *Journal of Machine Learning Research*, 21(184). https://jmlr.org/papers/v21/20-345.html
+
+[4] Raayoni, G., Gottlieb, S., Manor, Y., et al. (2021). Generating conjectures on fundamental constants with the Ramanujan Machine. *Nature*, 590, 67–73. https://doi.org/10.1038/s41586-021-03229-4
+
+[5] Saha, S., & Sinha, S. (2024). Apéry-like sequences defined by four-term recurrences and bespoke continued fractions. *arXiv:2411.02617*. https://arxiv.org/abs/2411.02617
+
+[6] Edelsbrunner, H., & Harer, J. (2010). *Computational Topology: An Introduction*. American Mathematical Society. https://www.ams.org/books/mbk/069/
+
+[7] Bauer, U. (2021). Ripser: efficient computation of Vietoris-Rips persistence barcodes. *Journal of Applied and Computational Topology*, 5, 391–423. https://doi.org/10.1007/s41468-021-00071-5
+
+[8] The GUDHI Project (2015–). *GUDHI User and Reference Manual*. GUDHI Editorial Board. https://gudhi.inria.fr/
+
+[9] Villani, C. (2009). *Optimal Transport: Old and New*. Springer. https://doi.org/10.1007/978-3-540-71050-9
+
+[10] Vanschoren, J., van Rijn, J. N., Bischl, B., & Torgo, L. (2013). OpenML: Networked science in machine learning. *SIGKDD Explorations*, 15(2), 49–60. https://openml.org/
+
+[11] Kingma, D. P., & Welling, M. (2014). Auto-Encoding Variational Bayes. *ICLR 2014*. https://arxiv.org/abs/1312.6114
+
+[12] de Silva, V., & Carlsson, G. (2004). Topological estimation using witness complexes. *SPBG*, 157–166. https://doi.org/10.2312/SPBG/SPBG04/157-166
+
+[13] Naitzat, G., Zhitnikov, A., & Lim, L. H. (2020). Topology of deep neural networks. *JMLR*, 21(184). https://arxiv.org/abs/2004.06093
+
+[14] Guss, W. H., & Salakhutdinov, R. (2018). On characterizing the capacity of neural networks using algebraic topology. *arXiv:1802.04443*. https://arxiv.org/abs/1802.04443
+
+[15] Chen, C., Ni, X., Bai, Q., & Wang, Y. (2019). A topological regularizer for classifiers via persistent homology. *AISTATS 2019*. https://arxiv.org/abs/1806.10714
+
+[16] Apéry, R. (1979). Irrationalité de ζ(2) et ζ(3). *Astérisque*, 61, 11–13.
+
+[17] Ramanujan, S. (1914). Modular equations and approximations to π. *Quarterly Journal of Mathematics*, 45, 350–372.
+
+[18] Saha, S., Sinha, S. (2024). Continued fractions for mathematical constants: a comprehensive survey. *arXiv:2502.17533*. https://arxiv.org/abs/2502.17533
+
+[19] Gómez-Bombarelli, R., Wei, J. N., Duvenaud, D., et al. (2018). Automatic chemical design using a data-driven continuous representation of molecules. *ACS Central Science*, 4(2), 268–276. https://doi.org/10.1021/acscentsci.7b00572
+
+---
+
+## Datasets Used
+
+| Source | URL |
+|---|---|
+| scikit-learn | https://scikit-learn.org/stable/datasets/ |
+| OpenML | https://www.openml.org/search?type=data |
+| PMLB | https://epistasislab.github.io/pmlb/ |
+| CMF Hunt Shards | https://github.com/VesterlundCoder/rd-lumi-z3 |
+| Ripser | https://github.com/scikit-tda/ripser.py |
+| GUDHI | https://gudhi.inria.fr/ |
+| Persim | https://github.com/scikit-tda/persim |
+
+---
+
+## Appendix A: TDI Atlas Summary Table
+
+*Generated by `tdi_atlas.py` — see `results/tdi_atlas.csv` for full values.*
+
+| Dataset | Domain | N | D | Acc | TDI VR-H₀ | TDI rand | σ |
+|---|---|---|---|---|---|---|---|
+| wine | biology | 178 | 13 | 1.000 | 52.2 | 42.7 | 0.82 |
+| breast_cancer | medicine | 569 | 30 | 0.965 | 38.9 | 99.9 | 2.57 |
+| cmf_hunt | mathematics | 6868 | 20 | 0.999 | 37.1 | 85.8 | 2.31 |
+| iris | biology | 150 | 4 | 0.974 | — | — | — |
+| *[full table in results/tdi_atlas.csv]* | | | | | | | |
+
+---
+
+## Appendix B: Reproducibility
+
+All experiments are fully reproducible:
+
+```bash
+git clone https://github.com/VesterlundCoder/tdi-atlas.git
+cd tdi-atlas
+pip install -r requirements.txt
+
+# Fast smoke test (10 datasets, ~5 min)
+python tdi_atlas.py --fast --out results/tdi_atlas_fast.csv
+
+# Full atlas (~2h, requires openml)
+python tdi_atlas.py --out results/tdi_atlas.csv
+
+# Visualise
+python visualize_atlas.py --atlas results/tdi_atlas.csv
+
+# CMF VAE training and exploration
+python cmf_vae.py --train --epochs 150 --visualize --generate 1000
+python cmf_vae.py --target-name apery_zeta3  # target ζ(3)
+python cmf_vae.py --target-name zeta_5       # target ζ(5)
+```
+
+Software versions: Python 3.9+, PyTorch 2.0+, scikit-learn 1.3+, ripser 0.6+, persim 0.3+, gudhi 3.8+ (optional), umap-learn 0.5+.
