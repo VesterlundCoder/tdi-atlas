@@ -1,35 +1,71 @@
-# TDI Atlas
+# The TDI Atlas
 
-**The Topological Deformation Index Atlas** — a cross-domain empirical study of how neural networks reshape the topological structure of data, with a case study on Continued Matrix Fraction (CMF) discovery for fundamental mathematical constants.
+**A Cross-Domain Empirical Study of Topological Deformation in Neural Network Representations**
 
-> Paper: [The TDI Atlas: A Cross-Domain Empirical Study of Topological Deformation in Neural Network Representations](./paper.md)  
-> Author: David Svensson · VesterlundCoder · May 2026
-
----
-
-## What is the TDI?
-
-The **Topological Deformation Index** measures how much a neural network changes the *shape* of data as it flows through successive layers:
-
-```
-TDI(model, data) = Σ_layers  Wasserstein_distance(PH(layer_l), PH(layer_{l+1}))
-```
-
-where `PH` is the **persistent homology** of the point cloud at each layer. A low TDI means the model found a coordinate system that respects the data's natural geometry. A high TDI means the model aggressively reshapes topology — useful for hard tasks, potentially wasteful for easy ones.
-
-The **TDI signal ratio** σ = TDI_random_labels / TDI_trained separates datasets with genuine learnable structure (σ >> 1) from trivial or noise-dominated ones (σ ≈ 1).
+David Vesterlund · Independent Research · VesterlundCoder · May 2026
 
 ---
 
-## Key Findings
+## Overview
 
-| Finding | Result |
+The TDI Atlas maps the **Topological Deformation Index (TDI)** across **373 datasets spanning 25 scientific domains** — biology, physics, finance, NLP, ecology, robotics, vision, speech, software engineering, and mathematics. For each dataset, a standardised 3-layer MLP is trained and the topological structure of its layer-wise representations is measured using persistent homology (Vietoris-Rips and Alpha complex, H₀ and H₁).
+
+The result is the first large-scale cross-domain topology fingerprint database, enabling systematic comparison of how much different types of data force neural networks to reshape geometric structure during learning.
+
+### Key metrics per dataset
+| Metric | Description |
 |---|---|
-| CMF coefficient space has the **lowest TDI** of any dataset | AE TDI = **14.5** (half of supervised MLP) |
-| CMF tier quality is geometrically encoded — discoverable without labels | Unsupervised AE recovers tier structure |
-| Breast cancer features show the **strongest topology signal** | σ = **2.57** |
-| Datasets cluster by scientific domain in TDI fingerprint space | PCA/UMAP of atlas confirms domain separation |
-| TDI Atlas spans **50+ datasets** across 15+ scientific domains | First cross-domain topology fingerprint database |
+| `tdi_vr_h0` | Wasserstein TDI summed across layers, VR filtration, H₀ |
+| `tdi_alpha_h0` | Same, Alpha complex |
+| `signal_ratio` σ | `TDI_rand / TDI_trained` — how much label structure drives topology |
+| `purity_gain` | `final_kNN_purity − input_kNN_purity` — topology learned vs raw |
+| `input_entropy_h0/h1` | Persistence entropy of raw input |
+
+---
+
+## Main Findings
+
+### signal_ratio distribution (373 datasets)
+- **Median σ = 0.87** — most networks *simplify* input topology rather than amplify it
+- **σ < 0.3** (pre-separated datasets): classes are near-linearly separable in raw feature space; linear models sufficient
+- **σ > 1.5** (topological amplifiers): network must *generate* structure absent in the input — depth and batch normalisation critical
+- **66%** of all datasets have σ < 1.0
+
+### Top purity_gain datasets
+| Dataset | Domain | purity_gain | Accuracy |
+|---|---|---|---|
+| isolet | speech | 0.394 | 0.963 |
+| cnae | nlp_features | 0.343 | 0.919 |
+| gina_agnostic | synthetic | 0.272 | 0.896 |
+| mnist_784 | vision | 0.250 | 0.942 |
+| har | robotics | 0.233 | 0.984 |
+
+### Domain-level signal_ratio (selected)
+| Domain | Avg σ | Interpretation |
+|---|---|---|
+| mathematics | 0.636 | Highly natural geometry |
+| biology | 0.718 | Pre-structured features |
+| nlp_features | 0.811 | Distributional requires reorganisation |
+| vision | 1.038 | Moderate amplification |
+| robotics | **1.272** | Strongest topological amplification |
+
+---
+
+## Seven Topology Archetypes
+
+From the atlas we identified seven canonical geometric patterns that recur across unrelated domains. Each implies a specific strategy for small-model architecture selection:
+
+| Archetype | σ range | purity_gain | Key recommendation |
+|---|---|---|---|
+| I — Pre-Separated Manifold | < 0.3 | ≈ 0 | Linear model sufficient |
+| II — Compact Low-Dim Cluster | 0.9–1.0 | ≈ 0 | Shallow network or kNN |
+| III — Topological Amplifier | > 1.5 | > 0.04 | Deep MLP + BN + GCN lift |
+| IV — High-D Sparse Manifold | 0.8–1.1 | > 0.20 | Dim-reduce first, then MLP |
+| V — Loop-Rich Geometry | 0.7–1.1 | variable | RBF/Fourier features, Alpha-complex |
+| VI — Curse-of-Dim Blob | ≈ 1.0 | ≈ 0 | Feature selection critical |
+| VII — Noisy Isotropic | 0.95–1.15 | < 0.01 | Feature engineering over architecture |
+
+See **Section 6.7** of `paper.md` for full descriptions, atlas examples, and detailed small-model guidance for each archetype.
 
 ---
 
@@ -37,19 +73,20 @@ The **TDI signal ratio** σ = TDI_random_labels / TDI_trained separates datasets
 
 ```
 tdi-atlas/
-├── tdi_atlas.py          # Main study runner — sweeps datasets × filtrations
-├── cmf_vae.py            # VAE for CMF latent space navigation and generation
-├── cmf_6f5_explorer.py   # 6F5 f0g4 stratum VAE + real δ-verifier + PSLQ identifier
-├── visualize_atlas.py    # PCA, UMAP, heatmaps, domain plots (7 figures)
-├── paper.md              # Full research paper with 25 references
-├── requirements.txt      # Python dependencies
-├── results/              # Generated by running the scripts (not committed)
-│   ├── tdi_atlas.csv     # The atlas — one row per dataset
-│   ├── tdi_atlas.json    # Same, full detail
-│   ├── cmf_vae.pt        # Trained VAE checkpoint
-│   ├── cmf_candidates.json   # Generated CMF candidates
-│   └── figures/atlas/    # All 7 visualisation figures
-└── LICENSE
+├── paper.md                    # Full research paper
+├── tdi_atlas.py                # Main atlas pipeline (all 373 datasets)
+├── visualize_atlas.py          # PCA/UMAP/histogram figures
+├── download_tda_datasets.py    # Dataset downloader (OpenML + sklearn)
+├── scan_topological_datasets.py # Dataset scanner / metadata collector
+├── requirements.txt
+└── results/
+    ├── tdi_atlas_400.json      # Full 373-dataset atlas (JSONL, one record per line)
+    ├── tdi_atlas_400.csv       # Flat CSV version
+    └── figures/
+        ├── fig_domain_signal_ratio.png
+        ├── fig_signal_ratio_hist.png
+        ├── fig_acc_vs_signal.png
+        └── fig_top_purity_gain.png
 ```
 
 ---
@@ -61,165 +98,77 @@ git clone https://github.com/VesterlundCoder/tdi-atlas.git
 cd tdi-atlas
 pip install -r requirements.txt
 
-# Smoke test: 10 datasets, ~5 minutes
+# Fast smoke test (~5 min, 10 datasets)
 python tdi_atlas.py --fast --out results/tdi_atlas_fast.csv
 
-# Full atlas: 50+ datasets, ~2 hours
+# Full atlas (~2h, requires openml)
 python tdi_atlas.py --out results/tdi_atlas.csv
 
-# Visualise the atlas (7 figures)
-python visualize_atlas.py --atlas results/tdi_atlas.csv --out results/figures/atlas
+# Generate figures
+python visualize_atlas.py --atlas results/tdi_atlas.csv
 ```
 
 ---
 
-## CMF VAE — Mathematical Constant Discovery
+## Atlas JSON Format
 
-The CMF-VAE trains a Variational Autoencoder on 74,880 CMF records and learns a smooth 16-dimensional latent manifold of CMF coefficient space. This manifold can be used to generate new formula candidates targeting specific mathematical constants.
+Each line of `results/tdi_atlas_400.json` is a JSON record:
 
-```bash
-# Train the VAE (~10 min on CPU with 74k records)
-python cmf_vae.py --train --epochs 150
-
-# Visualise the latent space (UMAP of tier clusters)
-python cmf_vae.py --visualize
-
-# Generate 1000 new Tier-A formula candidates
-python cmf_vae.py --generate 1000
-
-# Target ζ(3) = Apéry's constant (1.2020569...)
-python cmf_vae.py --target-name apery_zeta3
-
-# Target ζ(5) (1.0369277...)
-python cmf_vae.py --target-name zeta_5
-
-# Interpolate between two known formulas
-python cmf_vae.py --interpolate
-
-# Provide custom CMF shards directory
-python cmf_vae.py --train --cmf-shards /path/to/hunt_shards/
+```json
+{
+  "dataset": "isolet",
+  "domain": "speech",
+  "n_samples": 7797,
+  "n_features": 617,
+  "n_classes": 26,
+  "accuracy": 0.963,
+  "tdi_vr_h0": 6571.4,
+  "tdi_vr_h1": 312.8,
+  "tdi_alpha_h0": 5103.2,
+  "tdi_alpha_h1": 241.6,
+  "tdi_random_label": 7218.5,
+  "signal_ratio": 1.099,
+  "input_entropy_h0": 5.94,
+  "input_entropy_h1": 5.23,
+  "input_knn_purity": 0.569,
+  "final_knn_purity": 0.963,
+  "purity_gain": 0.394,
+  "elapsed_s": 121.3
+}
 ```
 
-**Supported target constants**: `apery_zeta3`, `zeta_5`, `pi`, `1_over_pi`, `ln2`, `catalan`, `euler_gamma`, `sqrt2`
-
 ---
 
-## Supported Datasets
+## Domains Covered
 
-| Category | Source | Example datasets |
-|---|---|---|
-| Biology / medicine | sklearn, OpenML | wine, iris, breast_cancer, diabetes |
-| Physics | OpenML | ionosphere, magic, sonar |
-| Finance | OpenML | bank_marketing, banknote, churn |
-| NLP features | OpenML | spambase, authorship |
-| Software metrics | OpenML | kc1, pc1, pc4, mc1 |
-| Ecology | OpenML | wilt, sylva |
-| Synthetic geometry | sklearn | swiss_roll, two_moons, two_circles, blobs |
-| Mathematics | Custom | cmf_hunt (74k CMF records, tiers A/B/C) |
-
----
-
-## Filtrations Available
-
-| Name | Method | Notes |
-|---|---|---|
-| `vr` | Vietoris-Rips | Fast via ripser. H₀ and H₁. |
-| `alpha` | Alpha complex | Tighter geometry via gudhi. Requires `pip install gudhi`. Falls back to VR. |
-
-H₂ (voids) can be enabled by passing `max_dim=2` to `compute_ph_vr` — computationally expensive, suitable for small N.
-
----
-
-## TDI Fingerprint Vector
-
-For each dataset, the atlas records:
-
-| Feature | Description |
-|---|---|
-| `tdi_vr_h0` | VR Vietoris-Rips, H₀ (connected components) |
-| `tdi_vr_h1` | VR, H₁ (loops) |
-| `tdi_alpha_h0` | Alpha complex, H₀ |
-| `tdi_alpha_h1` | Alpha complex, H₁ |
-| `tdi_random_label` | TDI under permuted labels (control) |
-| `signal_ratio` | `tdi_random / tdi_trained` — topology signal strength |
-| `input_entropy_h0` | Persistence entropy of raw input H₀ |
-| `input_knn_purity` | kNN label purity of raw features |
-| `final_knn_purity` | kNN label purity of penultimate layer |
-| `purity_gain` | `final - input` kNN purity |
-| `accuracy` | MLP test accuracy |
-
----
-
-## 6F5 CMF Explorer — f0g4 Stratum VAE Search
-
-The `cmf_6f5_explorer.py` module implements a focused VAE-guided search for high-δ trajectories in the **f0g4 stratum** of 6-dimensional Confluent Hypergeometric CMFs.
-
-### Background
-
-The **delta ladder** (from the Degeneracy Atlas) shows that as g-parameters become zero, the active companion matrix dimension drops and the irrationality exponent δ rises:
-
-| Stratum | Active dim | Canonical δ | Proof status |
-|---|---|---|---|
-| f0g4 (full 6F5) | 6 | 0.148 → **0.208** (best sweep) | Conjectured |
-| f1g4 | 5 | 0.218 | Atlas |
-| f2g4 | 4 | 0.324 | Atlas |
-| **f3g4** (3F2) | 3 | **0.506** | **Proven irrational** ✓ |
-| f4g4 | 2 | 1.006 | Atlas |
-
-A log-z scan over 7,020 trajectories confirmed that **Zones I–II are stable** (genuine positive asymptotic δ) and the small-|z| limit approaches δ ≈ 0.205.
-
-### Usage
-
-```bash
-# Full pipeline: train → UMAP → generate 300 → δ-verify → identify constants
-python cmf_6f5_explorer.py --full-run \
-  --sweeps-dir /path/to/rd-lumi-z3/6F5Sweeps
-
-# Individual steps
-python cmf_6f5_explorer.py --train --epochs 200
-python cmf_6f5_explorer.py --visualize           # latent space coloured by δ
-python cmf_6f5_explorer.py --delta-plots         # delta ladder + log-z scan charts
-python cmf_6f5_explorer.py --generate 300 --verify   # generate + run real recurrence
-python cmf_6f5_explorer.py --identify            # mpmath.identify on best L values
-```
-
-The verifier uses the **actual 6F5 matrix recurrence** (via `mpmath`) — not an approximation — to compute δ(n, 2n) for each generated candidate. New candidates with δ > 0.10 appear at a **15–25% hit rate** vs ~0.1% in blind random sweeps.
-
-### Data files used (from `6F5Sweeps/`)
-- `f0g4_neighborhood_results.jsonl` — 4,480 neighbourhood sweep records
-- `log_z_scan_deep.jsonl` — 7,020 log-z scan hits
-- `verify_delta_official.jsonl` — 97 verified deep profiles
-- `large_hits_positive_delta.jsonl`, `wide_scalpel_results.jsonl`, etc.
+biology · physics · finance · nlp_features · ecology · software · vision · speech · robotics · medicine · engineering · chemistry · materials · social · psychology · education · neuroscience · environment · energy · aerospace · food · synthetic · digits · openml_catalog · mathematics
 
 ---
 
 ## Citation
 
 ```bibtex
-@misc{svensson2026tdi,
-  title   = {The TDI Atlas: A Cross-Domain Empirical Study of
-             Topological Deformation in Neural Network Representations},
-  author  = {Svensson, David},
-  year    = {2026},
-  url     = {https://github.com/VesterlundCoder/tdi-atlas},
-  note    = {Self-published preprint}
+@misc{vesterlund2026tdi,
+  title  = {The TDI Atlas: A Cross-Domain Empirical Study of Topological Deformation in Neural Network Representations},
+  author = {Vesterlund, David},
+  year   = {2026},
+  url    = {https://github.com/VesterlundCoder/tdi-atlas}
 }
 ```
 
 ---
 
-## References
+## Requirements
 
-See [paper.md](./paper.md) for the full reference list including:
-- Naitzat et al. (2020) — Topology of deep neural networks
-- Raayoni et al. (2021) — Ramanujan Machine (Nature)
-- Kingma & Welling (2014) — VAE
-- Bauer (2021) — Ripser
-- Gómez-Bombarelli et al. (2018) — VAE for molecular discovery
-- OpenML, scikit-learn, GUDHI, ripser, persim
-
----
-
-## License
-
-MIT — see [LICENSE](./LICENSE)
+```
+torch>=2.0.0
+scikit-learn>=1.3.0
+ripser>=0.6.0
+persim>=0.3.0
+gudhi>=3.8.0
+umap-learn>=0.5.0
+openml>=0.14.0
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+```

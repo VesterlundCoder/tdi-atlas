@@ -7,6 +7,10 @@ scikit-learn>=1.3.0
 numpy>=1.24.0
 scipy>=1.11.0
 
+# Symbolic math + operator geometry
+sympy>=1.12
+networkx>=3.1
+
 # Persistent homology
 ripser>=0.6.0
 persim>=0.3.0

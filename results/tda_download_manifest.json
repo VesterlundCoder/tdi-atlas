@@ -1,0 +1,224 @@
+{
+  "downloaded_at": "2026-05-12T14:44:10.742658",
+  "total_selected": 27,
+  "local_dir": "datasets/tda_repos",
+  "lacie_dir": "/Volumes/LaCie/tda_datasets",
+  "repos": [
+    {
+      "name": "scikit-tda/tadasets",
+      "url": "https://github.com/scikit-tda/tadasets",
+      "score": 2.66,
+      "size_kb": 7011,
+      "crypto_tag": "LOW",
+      "crypto_note": "Canonical synthetic shapes (circles, tori, spheres, Klein bottles). Useful as negative-class examples in Study 8 ROCA detection (structured vs random key topology)."
+    },
+    {
+      "name": "aidos-lab/mantra-benchmarks",
+      "url": "https://github.com/aidos-lab/mantra-benchmarks",
+      "score": 2.61,
+      "size_kb": 1175,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "DiegoHuerta1/Topological-Data-Analysis",
+      "url": "https://github.com/DiegoHuerta1/Topological-Data-Analysis",
+      "score": 2.5,
+      "size_kb": 4052,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "lukewolcott/PipelineInteract2d",
+      "url": "https://github.com/lukewolcott/PipelineInteract2d",
+      "score": 2.5,
+      "size_kb": 14,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "RabadanLab/ph_datasets",
+      "url": "https://github.com/RabadanLab/ph_datasets",
+      "score": 2.27,
+      "size_kb": 73717,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "aidos-lab/mantra",
+      "url": "https://github.com/aidos-lab/mantra",
+      "score": 2.25,
+      "size_kb": 26265,
+      "crypto_tag": "LOW",
+      "crypto_note": "Manifold triangulation dataset useful for pretraining the SNN simplicial backbone. Provides diverse simplicial complex structures beyond synthetic CMF data."
+    },
+    {
+      "name": "zyjux/sffg_tda",
+      "url": "https://github.com/zyjux/sffg_tda",
+      "score": 2.2,
+      "size_kb": 6955,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "farzananasrin114/Bayesian-for-persistent-homology",
+      "url": "https://github.com/farzananasrin114/Bayesian-for-persistent-homology",
+      "score": 2.11,
+      "size_kb": 118,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "LucaNyckees/zigzag-homology",
+      "url": "https://github.com/LucaNyckees/zigzag-homology",
+      "score": 2.11,
+      "size_kb": 190340,
+      "crypto_tag": "MEDIUM",
+      "crypto_note": "Zigzag persistence tracks topological changes across time — useful for detecting transition events in side-channel traces (RELIN/BOOT events in FHE, Study 10)."
+    },
+    {
+      "name": "netsci-rwth/ahorn",
+      "url": "https://github.com/netsci-rwth/ahorn",
+      "score": 2.1,
+      "size_kb": 3103,
+      "crypto_tag": "LOW",
+      "crypto_note": "Cell complex and hypergraph datasets — diverse higher-order graph structures for backbone pretraining. Improves generalisation of the SNN100M k5 backbone."
+    },
+    {
+      "name": "hashansl/GNN-experiment",
+      "url": "https://github.com/hashansl/GNN-experiment",
+      "score": 2.07,
+      "size_kb": 2105,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "alt-f4-dev/PHysicalTDA.jl",
+      "url": "https://github.com/alt-f4-dev/PHysicalTDA.jl",
+      "score": 2.04,
+      "size_kb": 738,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "izzortsi/crypto-phgraphs",
+      "url": "https://github.com/izzortsi/crypto-phgraphs",
+      "score": 2.04,
+      "size_kb": 4860,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "willy-arison/Handwritten-Digit-Classification-Using-Topological-Features-and-RandomForestClassifier",
+      "url": "https://github.com/willy-arison/Handwritten-Digit-Classification-Using-Topological-Features-and-RandomForestClassifier",
+      "score": 2.02,
+      "size_kb": 27,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "LoyalSon/QuantumTopo-Accelerated-Topological-Data-Analysis",
+      "url": "https://github.com/LoyalSon/QuantumTopo-Accelerated-Topological-Data-Analysis",
+      "score": 2.0,
+      "size_kb": 14,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "EvReN-jr/Hybrid-Topological-Data-Analysis-TDA--Fall-Detection",
+      "url": "https://github.com/EvReN-jr/Hybrid-Topological-Data-Analysis-TDA--Fall-Detection",
+      "score": 2.0,
+      "size_kb": 81,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "sgm7373/TDA-ParaView-TTK",
+      "url": "https://github.com/sgm7373/TDA-ParaView-TTK",
+      "score": 2.0,
+      "size_kb": 1735,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "Sweet-Twixie/Breakhis-and-Persistent-Homology",
+      "url": "https://github.com/Sweet-Twixie/Breakhis-and-Persistent-Homology",
+      "score": 2.0,
+      "size_kb": 2739,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "OmkarMehta/entropy-and-persistent-homology",
+      "url": "https://github.com/OmkarMehta/entropy-and-persistent-homology",
+      "score": 2.0,
+      "size_kb": 1984,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "Suibeom/YosemitePershom",
+      "url": "https://github.com/Suibeom/YosemitePershom",
+      "score": 2.0,
+      "size_kb": 1675,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "acharchan/tdaproject",
+      "url": "https://github.com/acharchan/tdaproject",
+      "score": 2.0,
+      "size_kb": 99,
+      "crypto_tag": "MEDIUM",
+      "crypto_note": "PH on geometric Brownian motion (stochastic process analysis). Timing jitter in crypto hardware follows similar stochastic structure — useful for noise-floor calibration."
+    },
+    {
+      "name": "FabianOnt/topological-data-analysis-the-mapper-algorithm",
+      "url": "https://github.com/FabianOnt/topological-data-analysis-the-mapper-algorithm",
+      "score": 2.0,
+      "size_kb": 2112,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "SARIAH372/TDA-Research-Tool",
+      "url": "https://github.com/SARIAH372/TDA-Research-Tool",
+      "score": 2.0,
+      "size_kb": 243,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "degnbol/hyperTDA",
+      "url": "https://github.com/degnbol/hyperTDA",
+      "score": 1.87,
+      "size_kb": 449080,
+      "crypto_tag": "LOW",
+      "crypto_note": "PL-curve → PH → hypergraph pipeline. NTT butterfly graphs have a natural PL-curve representation; this codebase shows how to lift it to a hypergraph for the backbone."
+    },
+    {
+      "name": "A-EL-YAAGOUBI/Dynamic-TDA",
+      "url": "https://github.com/A-EL-YAAGOUBI/Dynamic-TDA",
+      "score": 1.61,
+      "size_kb": 15774,
+      "crypto_tag": "HIGH",
+      "crypto_note": "Dynamic sliding-window PH on EEG time-series — exact same pipeline as ZeroTrace Study 7 (sliding-window RL on power traces). Adapt directly for NTT/RSA trace segments."
+    },
+    {
+      "name": "eashwarsoma/TDA-benchmark",
+      "url": "https://github.com/eashwarsoma/TDA-benchmark",
+      "score": 1.54,
+      "size_kb": 28190,
+      "crypto_tag": "—",
+      "crypto_note": ""
+    },
+    {
+      "name": "aerojam95/mph-deep-learning-pipeline",
+      "url": "https://github.com/aerojam95/mph-deep-learning-pipeline",
+      "score": 1.52,
+      "size_kb": 305132,
+      "crypto_tag": "HIGH",
+      "crypto_note": "Multi-parameter PH landscapes → CNN/contrastive DL. The pipeline architecture maps directly to converting NTT butterfly traces into PH feature tensors for Study 11."
+    }
+  ]
+}

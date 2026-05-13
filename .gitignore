@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Results — CMF-specific (not part of TDI Atlas study)
+results/cmf_irr_vae/
+cmf_6f5_explorer.py
+cmf_irrationality_vae.py
+cmf_vae.py
+CRYPTO_TDA_RESEARCH_APPLICATIONS.md
+Operatorgeometri.md
+
+# Large data / logs
+results/tdi_atlas_400.log
+datasets/
+results/opgeom/
+
+# Misc
+.DS_Store
+*.pt
+*.ckpt
