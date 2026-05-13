@@ -1,9 +1,0 @@
-{
-  "n_training_records": 29491,
-  "n_hunt": 25000,
-  "n_6f5": 4491,
-  "n_generated": 500,
-  "n_hits_delta_gt_010": 0,
-  "hit_rate_pct": 0.0,
-  "top_candidates": []
-}
