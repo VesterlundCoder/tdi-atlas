@@ -1,0 +1,63 @@
+{
+  "shelf_mark": "Paris, Bibliothèque nationale de France, Département des Manuscrits, Grec 2485",
+  "siglum": "A",
+  "short_ref": "Paris. gr. 2485",
+  "note_on_numbering": "Earlier scholarship sometimes cited as 'Paris. gr. 2348' — the correct BnF shelfmark is Grec 2485 (Tannery's siglum A).",
+  "contents": [
+    "Diophantus of Alexandria, Arithmetica Books I–VI",
+    "Diophantus of Alexandria, On Polygonal Numbers",
+    "Maximus Planudes, scholia (in-line, full-page width)",
+    "Maximus Planudes, De Computo Indico (fragment)"
+  ],
+  "date": "1560–1570",
+  "place_of_copy": "Italy (Rome or Ferrara, dated by watermark Briquet no. 6291)",
+  "material": "Paper (watermarked, thick), in-quarto gatherings",
+  "folios": 214,
+  "dimensions_mm": "175 × 230",
+  "layout": "Two columns for Diophantus text; scholia by Planudes in full-page width",
+  "scribal_marks": "Rubricated: book titles + initial E of each section; sigil σχ marks scholia openings; custodes at end of each gathering",
+  "blank_spaces": "Several blank spaces preserving lost figures not transmitted from antigraph",
+  "provenance": [
+    "Stamp: XVIIe siècle, type Josserand-Bruno n. 4 (ff. 1r, 214v)",
+    "Colbert collection (Cod.Colb.)",
+    "Royal library (Regius cote on f.1r)",
+    "Binding: XIXe siècle, marbled boards, red maroquin spine with Louis-Philippe cipher, binder: Duplanil"
+  ],
+  "authors": [
+    {"name": "Diophantus of Alexandria", "dates": "c. 246?–330? CE", "role": "author"},
+    {"name": "Maximus Planudes", "dates": "c. 1260–1310 CE", "role": "scholiast"}
+  ],
+  "tannery_edition": {
+    "title": "Diophanti Alexandrini Opera Omnia cum graecis commentariis",
+    "editor": "Paul Tannery",
+    "volumes": 2,
+    "publisher": "Teubner, Leipzig",
+    "years": "1893–1895",
+    "archive_org": "https://archive.org/details/diophantialexan01plangoog"
+  },
+  "heath_study": {
+    "title": "Diophantus of Alexandria: A Study in the History of Greek Algebra",
+    "author": "Sir Thomas L. Heath",
+    "edition": "2nd",
+    "year": 1910,
+    "archive_org": "https://archive.org/details/diophantusofalex00heatiala"
+  },
+  "iiif": {
+    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10722263g/manifest.json",
+    "gallica_page": "https://gallica.bnf.fr/ark:/12148/btv1b10722263g",
+    "bnf_catalog": "http://archivesetmanuscrits.bnf.fr/ark:/12148/cc102994q",
+    "biblissima": "https://iiif.biblissima.fr/collections/manifest/9f83a493de7df6eccd4099623a498afe79f6755e",
+    "license": "https://gallica.bnf.fr/html/und/conditions-dutilisation-des-contenus-de-gallica",
+    "image_url_pattern": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10722263g/f{N}/full/full/0/native.jpg",
+    "thumbnail_url_pattern": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10722263g/f{N}/full/500,/0/native.jpg",
+    "canvas_url_pattern": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10722263g/canvas/f{N}",
+    "folio_range": "f1–f214",
+    "image_resolution": "5912 × 4196 px (full)"
+  },
+  "pinakes": {
+    "tlg_author_id": "tlg2008",
+    "tlg_work_id": "tlg001",
+    "note": "Search Pinakes at https://pinakes.irht.cnrs.fr for full MS tradition of Arithmetica"
+  },
+  "research_significance": "Tannery's siglum A — the primary Greek archetype used for all modern critical editions of the Arithmetica. Contains the syncopated algebraic notation that is the earliest known use of algebraic symbolism in European mathematics. Planudes' scholia are the earliest Byzantine mathematical commentary on Diophantus."
+}

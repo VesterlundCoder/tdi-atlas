@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "source_primary": "Paul Tannery, Diophanti Alexandrini Opera Omnia, Vol.1, Teubner 1893 (introduction)",
+    "source_secondary": "T.L. Heath, Diophantus of Alexandria, 2nd ed., Cambridge 1910, pp. 32–76",
+    "source_tertiary": "Fabio Acerbi, Byzantine Recensions survey, HAL hal-03596963",
+    "encoding_status": "partial — compound ligatures lack single Unicode codepoints; TEI scheme defined below",
+    "encoding_gap": "The subtraction sign has no Unicode codepoint. Compound power symbols (ΔΥ, ΚΥ, etc.) are multi-character approximations only.",
+    "ms_source": "Paris. gr. 2485 (Grec 2485), Gallica ark:/12148/btv1b10722263g"
+  },
+  "unknown_symbol": {
+    "greek_name": "ἀριθμός",
+    "transliteration": "arithmos",
+    "meaning": "the unknown quantity (x)",
+    "ms_form": "resembles a final sigma ς or stigma ϛ; Heath: 'the symbol used for the unknown quantity in the MSS. is somewhat like the final sigma'",
+    "unicode_approximation": "ϛ",
+    "unicode_codepoint": "U+03DB",
+    "unicode_name": "GREEK SMALL LETTER STIGMA",
+    "latex": "\\varsigma",
+    "tei_xml": "<seg type=\"dioph:unknown\" n=\"1\">ϛ</seg>",
+    "modern_equivalent": "x",
+    "ambiguity_warning": "ϛ (stigma) also serves as the Milesian numeral for 6. Context determines reading. In algebraic expressions, it is the unknown; in numerical lists, it is 6."
+  },
+  "power_symbols": [
+    {
+      "power": 1,
+      "greek_name": "ἀριθμός",
+      "abbreviation_in_ms": "ϛ",
+      "unicode_approximation": "ϛ",
+      "modern_equivalent": "x",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"1\">ϛ</seg>"
+    },
+    {
+      "power": 2,
+      "greek_name": "Δύναμις",
+      "transliteration": "Dynamis",
+      "abbreviation_in_ms": "ΔΥ (delta + upsilon, ligatured; sometimes Δ with superscript υ)",
+      "unicode_approximation": "ΔΥ",
+      "modern_equivalent": "x²",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"2\">ΔΥ</seg>",
+      "encoding_note": "No single Unicode codepoint. The ligature ΔΥ is written as two Greek letters."
+    },
+    {
+      "power": 3,
+      "greek_name": "Κύβος",
+      "transliteration": "Kybos",
+      "abbreviation_in_ms": "ΚΥ (kappa + upsilon, ligatured)",
+      "unicode_approximation": "ΚΥ",
+      "modern_equivalent": "x³",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"3\">ΚΥ</seg>",
+      "encoding_note": "No single Unicode codepoint."
+    },
+    {
+      "power": 4,
+      "greek_name": "Δυναμοδύναμις",
+      "transliteration": "Dynamodynamis",
+      "abbreviation_in_ms": "ΔΔ or ΔΥΔ (reduplicated Delta)",
+      "unicode_approximation": "ΔΔ",
+      "modern_equivalent": "x⁴",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"4\">ΔΔ</seg>"
+    },
+    {
+      "power": 5,
+      "greek_name": "Δυναμόκυβος",
+      "transliteration": "Dynamokybos",
+      "abbreviation_in_ms": "ΔΚ or ΔΥΚ",
+      "unicode_approximation": "ΔΚ",
+      "modern_equivalent": "x⁵",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"5\">ΔΚ</seg>"
+    },
+    {
+      "power": 6,
+      "greek_name": "Κυβόκυβος",
+      "transliteration": "Kybokybos",
+      "abbreviation_in_ms": "ΚΚ or ΚΥΚΥ (reduplicated kappa)",
+      "unicode_approximation": "ΚΚ",
+      "modern_equivalent": "x⁶",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"6\">ΚΚ</seg>"
+    }
+  ],
+  "inverse_power_symbols": [
+    {
+      "power": -1,
+      "greek_name": "ἀριθμοστόν",
+      "transliteration": "arithmoston",
+      "abbreviation_in_ms": "ϛΑ (stigma + alpha with superscript or overline)",
+      "unicode_approximation": "ϛΑ",
+      "modern_equivalent": "1/x or x⁻¹",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"-1\">ϛΑ</seg>"
+    },
+    {
+      "power": -2,
+      "greek_name": "Δυναμοστόν",
+      "abbreviation_in_ms": "ΔΥΑ",
+      "unicode_approximation": "ΔΑ",
+      "modern_equivalent": "1/x² or x⁻²",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"-2\">ΔΑ</seg>"
+    },
+    {
+      "power": -3,
+      "greek_name": "Κυβοστόν",
+      "abbreviation_in_ms": "ΚΥΑ",
+      "unicode_approximation": "ΚΑ",
+      "modern_equivalent": "1/x³ or x⁻³",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"-3\">ΚΑ</seg>"
+    },
+    {
+      "power": -4,
+      "greek_name": "Δυναμοδυναμοστόν",
+      "abbreviation_in_ms": "ΔΔΑ",
+      "unicode_approximation": "ΔΔΑ",
+      "modern_equivalent": "x⁻⁴",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"-4\">ΔΔΑ</seg>"
+    },
+    {
+      "power": -5,
+      "greek_name": "Δυναμοκυβοστόν",
+      "abbreviation_in_ms": "ΔΚΑ",
+      "unicode_approximation": "ΔΚΑ",
+      "modern_equivalent": "x⁻⁵",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"-5\">ΔΚΑ</seg>"
+    },
+    {
+      "power": -6,
+      "greek_name": "Κυβοκυβοστόν",
+      "abbreviation_in_ms": "ΚΚΑ",
+      "unicode_approximation": "ΚΚΑ",
+      "modern_equivalent": "x⁻⁶",
+      "tei_xml": "<seg type=\"dioph:power\" n=\"-6\">ΚΚΑ</seg>"
+    }
+  ],
+  "constant_symbol": {
+    "greek_name": "Μονάδες",
+    "transliteration": "Monades",
+    "meaning": "units / constant term",
+    "abbreviation_in_ms": "Μ° or Μ̄ (mu with degree mark or overline)",
+    "unicode_approximation": "Μ",
+    "unicode_codepoint": "U+039C",
+    "modern_equivalent": "constant (e.g. Μ γ = 3)",
+    "tei_xml": "<seg type=\"dioph:constant\">Μ</seg>"
+  },
+  "operational_symbols": [
+    {
+      "operation": "addition",
+      "symbol_in_ms": "(none — juxtaposition)",
+      "unicode": null,
+      "tei_xml": "<pc type=\"dioph:add\"/>",
+      "note": "Terms are simply written next to each other; positive terms precede negative"
+    },
+    {
+      "operation": "subtraction / minus",
+      "symbol_in_ms": "An inverted truncated ψ (Heath's description); resembles a Λ with a crossbar or an upward-pointing arrow",
+      "unicode": null,
+      "unicode_codepoint": "NONE — no Unicode codepoint exists for this symbol",
+      "tei_xml": "<pc type=\"dioph:minus\">↗</pc>",
+      "tei_alternative": "<gap reason=\"no-unicode\" unit=\"chars\" quantity=\"1\"><desc>Diophantus minus sign</desc></gap>",
+      "latex": "\\widehat{\\Lambda} \\text{ (approximation only)}",
+      "encoding_gap": "This is the single most important unencoded symbol in Diophantus. It precedes ALL subtracted terms as a group marker, not individual terms.",
+      "usage": "All terms to be subtracted follow this sign as a group. E.g. 'x³ + x [minus-sign] x² + 3' means x³ + x − x² − 3"
+    },
+    {
+      "operation": "equality",
+      "symbol_in_ms": "ἴσ or ἴσος (abbreviated)",
+      "unicode_approximation": "ἴσ",
+      "tei_xml": "<pc type=\"dioph:equals\">ἴσ</pc>",
+      "modern_equivalent": "="
+    },
+    {
+      "operation": "fraction",
+      "symbol_in_ms": "numerator written above denominator with horizontal bar; or 'ἐν μορίῳ' (in the part of) for complex fractions",
+      "tei_xml": "<num type=\"fraction\"><num role=\"numerator\">…</num><num role=\"denominator\">…</num></num>"
+    }
+  ],
+  "milesian_numerals": {
+    "description": "Greek alphabetic numeral system (Milesian), used throughout. Overline (κεφαλαία) distinguishes numerals from letters.",
+    "units": {
+      "ᾱ": 1, "β̄": 2, "γ̄": 3, "δ̄": 4, "ε̄": 5, "ϛ̄": 6,
+      "ζ̄": 7, "η̄": 8, "θ̄": 9
+    },
+    "tens": {
+      "ῑ": 10, "κ̄": 20, "λ̄": 30, "μ̄": 40, "ν̄": 50,
+      "ξ̄": 60, "ο̄": 70, "π̄": 80, "ϙ̄": 90
+    },
+    "hundreds": {
+      "ρ̄": 100, "σ̄": 200, "τ̄": 300, "ῡ": 400, "φ̄": 500,
+      "χ̄": 600, "ψ̄": 700, "ω̄": 800, "ϡ̄": 900
+    },
+    "myriad": {"Μ": 10000},
+    "unicode_combining_overline": "U+0305 (COMBINING OVERLINE) placed after each digit character"
+  },
+  "example_expressions": [
+    {
+      "diophantus_notation": "ΔΥ ᾱ ϛ γ̄ Μ β̄",
+      "modern_notation": "x² + 3x + 2",
+      "tei_encoding": "<seg type=\"dioph:expr\"><seg type=\"dioph:power\" n=\"2\">ΔΥ</seg> <num>ᾱ</num> <seg type=\"dioph:power\" n=\"1\">ϛ</seg> <num>γ̄</num> <seg type=\"dioph:constant\">Μ</seg> <num>β̄</num></seg>",
+      "source": "Reconstructed example; see Heath p.42"
+    },
+    {
+      "diophantus_notation": "ΚΥ ᾱ ΔΥ γ̄ [minus] ϛ ε̄ Μ β̄",
+      "modern_notation": "x³ + 3x² − 5x − 2",
+      "note": "[minus] represents the unencoded subtraction sign",
+      "source": "Reconstructed example after Heath p.44"
+    },
+    {
+      "diophantus_notation": "Arithmetica I.1 opening: ΔΥ ᾱ ἴσ Μ δ̄",
+      "modern_notation": "x² = 4",
+      "source": "Heath p.130 (Book I, Problem 1 simplified)"
+    }
+  ],
+  "planudes_additions": {
+    "description": "Maximus Planudes (c.1260–1310) added scholia in full-page width (vs. Diophantus text in two columns). The sigil σχ marks scholion openings.",
+    "content": "Explanatory notes on Diophantus's methods; Byzantine arithmetic context; some alternative solutions",
+    "ms_identification": "ff. marked with σχ in the manuscript",
+    "scholarly_ref": "A. Allard corrects Tannery's misidentification of the Planudes scribal hand"
+  },
+  "tei_namespace_proposal": {
+    "prefix": "dioph",
+    "uri": "http://tdi-atlas.research/diophantus/notation/1.0",
+    "seg_types": [
+      "dioph:unknown", "dioph:power", "dioph:constant",
+      "dioph:expr", "dioph:minus", "dioph:add", "dioph:equals"
+    ],
+    "note": "Proposed namespace for encoding Diophantus notation in TEI P5. No standard exists yet — this is an open research gap."
+  }
+}
