@@ -1,0 +1,11 @@
+# Manuscript images — stored locally, not in Git (168MB)
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.jp2
+
+# But DO track line crops directory structure
+!line_crops/.gitkeep
+!images/.gitkeep
