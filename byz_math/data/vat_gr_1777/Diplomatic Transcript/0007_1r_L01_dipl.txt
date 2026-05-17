@@ -1,0 +1,54 @@
+---
+manuscript: Vat.gr.1777
+folio: 1r
+canvas: 0007
+layer: diplomatic
+transcriber: cascade+user
+date: 2026-05-17
+confidence: low-medium
+notes: "Dense single-column Byzantine minuscule, ~43 lines. Marginal annotations right margin approx. L27-L32. Image preview scale limits per-letter precision; [illeg.] marks genuine illegibility."
+---
+
+L01: τὰ καθὸ [λδ?] πτῶϲιν οἷον ῥητορικὰ νομοθετικὰ καὶ ἰατρικὰ· καὶ ἡ δυνάτεχνα· ὠφελιμοι τῷ βιβλίω· τὸ δὲ παιδαγωγὸϲ· εἰποταχυμεδ[ι/η?]α̅
+L02: τὰ ἐπι[μ/ν?]έδου πίστοῦϲε καὶ τὰ τῆϲ πραγματείαϲ δὲ ἐν τῷ δ λόγῳ λαμβάνων ἐν δὲ τοῖϲ τοπικοῖϲ ὁρι[ζ?]ομένωϲ· ἐπὶ δυν[α?]μικῇ προδιακειμέν[α/ω?] παραδ[ι?]
+L03: [illeg.] τεχν[ι/η?] [illeg.] καὶ [illeg.] τ̄ν̄ [illeg.] ο̄ν̄ [illeg.] πρ̄ [illeg.]
+L04: [illeg.] καθόλου [illeg.] τ̄ [illeg.] καὶ [illeg.] ἐν τ̄ῷ [illeg.] λόγ[ω/ου?] [illeg.]
+L05: [illeg.] τοῦ [illeg.] καὶ [illeg.] δ[ε/ή?] [illeg.] πρ̄ὸς [illeg.] τα[ῦ?]τα [illeg.]
+L06: [illeg.] ε̄ῑ [illeg.] γ[ά/ὰ?]ρ [illeg.] ἀλλ[ὰ?] [illeg.] ο̄ν̄ [illeg.] κ̄αί [illeg.]
+L07: [illeg.] τῆϲ [illeg.] φιλοϲοφί[α?]ϲ [illeg.] καὶ [illeg.] τ[ό/ά?] [illeg.] πρ[ῶ?]τον [illeg.]
+L08: [illeg.] κατ[ὰ?] [illeg.] τ[ό?] τε [illeg.] καὶ τ[ή/ὴ?]ν [illeg.] τεχν[ι?] [illeg.]
+L09: [illeg.] δ[ε?] [illeg.] ε̄ἶναι [illeg.] τοῦτο [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.]
+L10: [illeg.] μ̄ε̄ν̄ [illeg.] γάρ [illeg.] δ[ι?]αιρε[ῖ/ῖτ?]αι [illeg.] ε̄ἰ̄ϲ̄ [illeg.]
+L11: [illeg.] ἐπιϲτ[ή?]μ[η?]ϲ [illeg.] τε [illeg.] ἀναλ[υτ?]ικ[ά/ῶν?] [illeg.] κ̄αί [illeg.]
+L12: [illeg.] λόγου [illeg.] τ̄ [illeg.] καθ[ό?]λου [illeg.] δέ [illeg.] τ[ό?] [illeg.]
+L13: [illeg.] καὶ [illeg.] τ̄ [illeg.] περ[ὶ?] [illeg.] τῆϲ [illeg.] ἀπ[ο?]δεί[ξ?]εωϲ [illeg.]
+L14: [illeg.] ο̄ν̄ [illeg.] ε̄ν̄ [illeg.] τ̄ῷ [illeg.] βιβλί[ω?] [illeg.] τοῦτ[ο?] [illeg.]
+L15: [illeg.] ὅτι [illeg.] τ[ό/ά?] τε [illeg.] κ̄αί [illeg.] τ[ῶ?]ν [illeg.] φιλοϲόφ[ω?]ν [illeg.]
+L16: [illeg.] πρ[ῶ/ά?]γμα [illeg.] εἶ[ναι?] [illeg.] ἄρ[α?] [illeg.] τ[ό?] [illeg.]
+L17: [illeg.] τ̄ [illeg.] γάρ [illeg.] π[ε?]ρ[ὶ?] [illeg.] τ̄ν̄ [illeg.] κατηγ[ορι?] [illeg.]
+L18: [illeg.] λαμβ[άν?]ειν [illeg.] κ̄αί [illeg.] τ[ῆ?]ϲ [illeg.] ἀρχ[ῆ?]ϲ [illeg.]
+L19: [illeg.] δ[έ?] [illeg.] εἶ[ναι?] [illeg.] τῆϲ [illeg.] πρ[ο?]τ[ά?]ϲε[ω?]ϲ [illeg.]
+L20: [illeg.] καθόλου [illeg.] καὶ [illeg.] μερι[κ?]ά [illeg.] τ[ε?] [illeg.] κ̄αί [illeg.]
+L21: [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] λόγ[ω?]ν [illeg.] ε̄ῑϲ̄ [illeg.] τ[ό?] [illeg.]
+L22: [illeg.] ε̄ν̄ [illeg.] γ[ά?]ρ [illeg.] κ̄αί [illeg.] ἀντ[ίφαϲ?]ιϲ [illeg.] κ̄αί [illeg.]
+L23: [illeg.] ϲ[υ?]λλογ[ι?]ϲμ[ό?]ϲ [illeg.] τ[ε?] [illeg.] δ̄ε̄ [illeg.] ἄρ[α?] [illeg.]
+L24: [illeg.] τοῦ [illeg.] ε̄ῑν̄αι [illeg.] τόδε [illeg.] κ̄αί τ[ό?] [illeg.] τ̄ [illeg.]
+L25: [illeg.] φαμ[έν?] [illeg.] π[ε?]ρ[ὶ?] [illeg.] τ̄ν̄ [illeg.] ε̄ῑρ̄η̄μ̄ε̄ν̄ω̄ν̄ [illeg.]
+L26: [illeg.] δ[ε?] [illeg.] κ̄αί [illeg.] τ[ή/ὴ?]ν [illeg.] δι[άν?]οιαν [illeg.] ε̄ν̄ [illeg.] ||MARG: [illeg.]||
+L27: [illeg.] τ̄ [illeg.] πρ̄ [illeg.] τῆϲ [illeg.] ε̄ν̄ [illeg.] τ̄ῷ [illeg.] λόγ[ω?] [illeg.] ||MARG: [illeg.]||
+L28: [illeg.] κ̄αί [illeg.] τ̄ [illeg.] φιλοϲόφ[ω?]ν [illeg.] τ̄ν̄ [illeg.] πρ[ο?]τ[ά?]ϲεωϲ [illeg.] ||MARG: [illeg.]||
+L29: [illeg.] ε̄ῑρ̄ [illeg.] ο̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ῷ [illeg.] κ̄αί [illeg.] ||MARG: [illeg.]||
+L30: [illeg.] ἄν [illeg.] λ[αμ?]β[άν?]ειν [illeg.] κ̄αί [illeg.] τ[ό?] [illeg.] τ̄ν̄ [illeg.] ||MARG: [illeg.]||
+L31: [illeg.] δ[ε?] [illeg.] τ̄ [illeg.] λόγοϲ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.]
+L32: [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.] πρ̄ [illeg.] ε̄ῑϲ̄ [illeg.] τ̄ [illeg.] τεχν[ι?] [illeg.]
+L33: [illeg.] γ[ά?]ρ [illeg.] τ[ό?] [illeg.] δ̄ε̄ [illeg.] ε̄ῑν̄αι [illeg.] κ̄αί [illeg.] τ̄ [illeg.]
+L34: [illeg.] ε̄ν̄ [illeg.] τ̄ῷ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] λόγ[ω?]ν [illeg.] κ̄αί [illeg.]
+L35: [illeg.] τ̄ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.] ὅτι [illeg.] τ[ό?]τε [illeg.] δ̄ε̄ [illeg.]
+L36: [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] τοῦ [illeg.] εἶ[ναι?] [illeg.]
+L37: [illeg.] λ[αμ?]β[άν?]ει [illeg.] τ̄ [illeg.] κ̄αί [illeg.] φαμ[έν?] [illeg.] ο̄ν̄ [illeg.]
+L38: [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ῷ [illeg.]
+L39: [illeg.] τοῦ [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] ε̄ῑρ̄ [illeg.] τ̄ν̄ [illeg.]
+L40: [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] κ̄αί [illeg.] τοῦτο [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] ε̄ῑ [illeg.]
+L41: [illeg.] λόγ[ω?]ν [illeg.] τ̄ [illeg.] κ̄αί [illeg.] δ̄ε̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.]
+L42: [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] τοῦ [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.]
+L43: [illeg.] κ̄αί [illeg.] τ[ό?] [illeg.] τ̄ν̄ [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] τοῦ [illeg.] ε̄ῑν̄αι [illeg.]

@@ -1,0 +1,55 @@
+---
+manuscript: Vat.gr.1777
+folio: 2r
+canvas: 0009
+layer: diplomatic
+transcriber: cascade
+date: 2026-05-17
+confidence: low
+notes: "Folio '2' visible top right. Dense single-column Byzantine minuscule, ~44 lines. Some paragraph indentation visible mid-page (approx L22). Left margin has annotation strip. Right margin also has marginal note strip. Commentary continues without visible title break."
+---
+
+L01: [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] ε̄ῑρ̄η̄μ̄ε̄ν̄ω̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.]
+L02: [illeg.] κ̄αί [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] τοῦ [illeg.] κ̄αί [illeg.]
+L03: [illeg.] τ̄ [illeg.] λόγοϲ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.]
+L04: [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] τ̄ῷ [illeg.] δ̄ε̄ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.]
+L05: [illeg.] δ[ι?]αιρ[ε?]ῖ[τ?]αι [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.]
+L06: [illeg.] κ̄αί [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] ε̄ῑ [illeg.] τ̄ [illeg.]
+L07: [illeg.] τοῦτο [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.]
+L08: [illeg.] τ̄ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.] τ[ό?] [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.]
+L09: [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.]
+L10: [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ῷ [illeg.] κ̄αί [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] τ̄ [illeg.]
+L11: [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.]
+L12: [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] τ[ό?] [illeg.] τ̄ [illeg.] ε̄ῑ [illeg.]
+L13: [illeg.] γ[ά?]ρ [illeg.] κ̄αί [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] κ̄αί [illeg.]
+L14: [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] τ̄ν̄ [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.]
+L15: [illeg.] κ̄αί [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] τοῦ [illeg.] δ̄ε̄ [illeg.] ε̄ῑ [illeg.]
+L16: [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] κ̄αί [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] ε̄ῑ [illeg.] τ̄ [illeg.]
+L17: [illeg.] κ̄αί [illeg.] τ[ό?] [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.]
+L18: [illeg.] τ̄ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] τοῦ [illeg.] δ̄ε̄ [illeg.]
+L19: [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] ε̄ῑ [illeg.]
+L20: [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.]
+L21: [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.] ε̄ν̄ [illeg.] κ̄αί [illeg.] τ[ό?] [illeg.] ε̄ῑ [illeg.] τ̄ν̄ [illeg.]
+L22: [illeg.] κ̄αί [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] γ[ά?]ρ [illeg.] κ̄αί [illeg.] δ̄ε̄ [illeg.]
+L23: [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.] τ̄ [illeg.] τοῦ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.]
+L24: [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.]
+L25: [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.]
+L26: [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.]
+L27: [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.]
+L28: [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.]
+L29: [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] δ̄ε̄ [illeg.] ε̄ῑ [illeg.]
+L30: [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] κ̄αί [illeg.] τ[ό?] [illeg.] ε̄ῑ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.]
+L31: [illeg.] κ̄αί [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] γ[ά?]ρ [illeg.] κ̄αί [illeg.] δ̄ε̄ [illeg.]
+L32: [illeg.] τ̄ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] δ̄ε̄ [illeg.]
+L33: [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] τοῦ [illeg.] ε̄ῑ [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.]
+L34: [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] τ̄ν̄ [illeg.] τ̄ [illeg.]
+L35: [illeg.] κ̄αί [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.]
+L36: [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] ε̄ῑ [illeg.] κ̄αί [illeg.]
+L37: [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] ε̄ῑ [illeg.]
+L38: [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] τοῦ [illeg.] δ̄ε̄ [illeg.] κ̄αί [illeg.]
+L39: [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] τ̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.]
+L40: [illeg.] κ̄αί [illeg.] ε̄ν̄ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] τ̄ν̄ [illeg.] ε̄ῑ [illeg.]
+L41: [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] κ̄αί [illeg.] τ[ό?] [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] τ̄ [illeg.]
+L42: [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.] δ̄ε̄ [illeg.]
+L43: [illeg.] τ̄ν̄ [illeg.] ε̄ν̄ [illeg.] τ̄ [illeg.] κ̄αί [illeg.] ε̄ῑ [illeg.] δ̄ε̄ [illeg.] τ̄ [illeg.]
+L44: [illeg.] κ̄αί [illeg.] τ̄ [illeg.] ε̄ν̄ [illeg.] τοῦ [illeg.] δ̄ε̄ [illeg.] τ̄ν̄ [illeg.] κ̄αί [illeg.]
