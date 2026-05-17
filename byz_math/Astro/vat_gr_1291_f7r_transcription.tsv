@@ -1,0 +1,121 @@
+# Vat.gr.1291, f.7r — Ptolemy, Handy Tables: NEW TABLE TYPE (likely parallax or related)
+# Header: ΠΑΡΑΛΛΑΞΕΙΣ ΤΟΥ ΔΙΑ ΒΥΖΑΝΤΙΟΥ ΠΑΡΑΛΛΗΛΟΥ
+# 
+# STRUCTURE: 6 small sub-tables per page (3 wide × 2 tall), one per zodiac sign
+# Each sub-table is headed by zodiac sign + parameter "ὧ X̄ Y̅" (hour value)
+# Columns: ω̅ (hour) | M̅ μηκ (μῆκος, length?) | ἡ̄ | πέρ (πέρας?)
+# 12 rows per sub-table (one per hour of the day, α-ιβ)
+#
+# Visible on this folio:
+#   TOP ROW: ΚΑΡΚΗΝΟΥ ὧ ζ νζ  |  ΛΕΟΝΤΟΣ ὧ ζ κβ  |  ΠΑΡΘΕΝΟΥ (partial, image 4)
+#   BOTTOM ROW: ΖΥΓΟΥ ὧ ϛ  |  ΣΚΟΡΠΙΟΥ ὧ ε ιβ  |  ΤΟΞΟΤΟΥ ὧ δ κη
+#
+# CRITICAL DISCLAIMER:
+# I am NOT certain what astronomical quantity this table computes.
+# The header word "παράλλαξις" suggests parallax, but the layout differs from 
+# standard parallax tables (which typically use double-entry with anomaly arguments).
+# This could be:
+#   (a) Parallax components by sign + hour
+#   (b) Hourly differences for seasonal-hour conversion  
+#   (c) Related to lunar latitude/equation computations
+# 
+# Without comparison to Tihon's critical edition I'm transcribing values but flagging
+# semantic interpretation as TENTATIVE.
+#
+# Many cells contain uncertain readings - this page has fainter ink and smaller cells
+# than f.5r-6v.
+
+table_sign	param	hour_arg	col_M	col_h	col_per	notes
+# === ΚΑΡΚΗΝΟΥ ὧ ζ νζ ===
+Cancer	ω=7;57	α	λδ	ληη[?]	ō	hour 1
+Cancer	ω=7;57	β	λε	λϛ	ροβ[?]	hour 2
+Cancer	ω=7;57	γ	λζ	λβ	ρμη	hour 3
+Cancer	ω=7;57	δ	λη	κε	ρμη	hour 4
+Cancer	ω=7;57	ε	λϛ	ιζ	ρμα	hour 5
+Cancer	ω=7;57	ϛ	λβ	ι	α	hour 6
+Cancer	ω=7;57	ζ	κζ	α[?]	α	hour 7
+Cancer	ω=7;57	η	κβ	α	α	hour 8
+Cancer	ω=7;57	θ	ιζ	α	β	hour 9
+Cancer	ω=7;57	ι	ιβ	κα	κα	hour 10
+Cancer	ω=7;57	ια	η	κη	κα	hour 11
+Cancer	ω=7;57	ιβ	γ	κα	μζ	hour 12
+
+# === ΛΕΟΝΤΟΣ ὧ ζ κβ ===
+Leo	ω=7;22	α	μϛ	ι[?]	ō	hour 1
+Leo	ω=7;22	β	μγ	ιζ	ρξ[?]	hour 2
+Leo	ω=7;22	γ	λζ	ιδ	ρπη	hour 3
+Leo	ω=7;22	δ	λα	[?]	ρπε	hour 4 - reading unclear
+Leo	ω=7;22	ε	κγ	ιη	ρπε	hour 5
+Leo	ω=7;22	ϛ	ιδ	ε	ϛη	hour 6
+Leo	ω=7;22	ζ	ϛ	α	α	hour 7
+Leo	ω=7;22	η	α	κβ	α	hour 8
+Leo	ω=7;22	θ	α	[?]	θη	hour 9
+Leo	ω=7;22	ι	α	κβ	λη	hour 10
+Leo	ω=7;22	ια	α	κϛ	μη	hour 11
+Leo	ω=7;22	ιβ	α	νζ	μγ	hour 12
+
+# === ΠΑΡΘΕΝΟΥ — partially visible on right edge of image 4 ===
+# Not transcribed - need clearer image of right side
+
+# === ΖΥΓΟΥ ὧ ϛ ===
+Libra	ω=6	α	μζ	κη	ō	hour 1
+Libra	ω=6	β	μζ	ιζ	ρμζ	hour 2
+Libra	ω=6	γ	μδ	ιζ	ρκα	hour 3
+Libra	ω=6	δ	λη	κζ	ρκα	hour 4
+Libra	ω=6	ε	ιδ[?]	λβ[?]	ρκβ	hour 5 - low confidence
+Libra	ω=6	ϛ	γ	νϛ	ριβ	hour 6
+Libra	ω=6	ζ	γ	ι	μγ	hour 7
+Libra	ω=6	η	ιε	μη	ξγ	hour 8
+Libra	ω=6	θ	ιθ	κγ	μ	hour 9
+Libra	ω=6	ι	[?]	γ	νγ	hour 10
+Libra	ω=6	ια	[?]	ιγ	ξγ	hour 11
+Libra	ω=6	ιβ	α	νζ	μγ	hour 12
+
+# === ΣΚΟΡΠΙΟΥ ὧ ε ιβ ===
+Scorpio	ω=5;12	α	μζ	κη	ō	hour 1
+Scorpio	ω=5;12	β	μϛ	κδ	ροβ	hour 2
+Scorpio	ω=5;12	γ	μγ	ιδ	ρμβ	hour 3
+Scorpio	ω=5;12	δ	λη[?]	ιδ	ρνη	hour 4
+Scorpio	ω=5;12	ε	λα	λγ	ρμε	hour 5
+Scorpio	ω=5;12	ϛ	κγ	νϛ	ριη	hour 6
+Scorpio	ω=5;12	ζ	ιζ	κβ	μδ	hour 7
+Scorpio	ω=5;12	η	θ	λ	μ	hour 8
+Scorpio	ω=5;12	θ	γ	κβ	μϛ	hour 9
+Scorpio	ω=5;12	ι	γ	[?]	μϛ	hour 10
+Scorpio	ω=5;12	ια	γ	[?]	ξγ	hour 11
+Scorpio	ω=5;12	ιβ	ϛ	μϛ	ξϛ	hour 12
+
+# === ΤΟΞΟΤΟΥ ὧ δ κη ===
+Sagittarius	ω=4;28	α	μβ	[?]	ō	hour 1 - second col illegible
+Sagittarius	ω=4;28	β	μ	[?]	ρπα	hour 2
+Sagittarius	ω=4;28	γ	λε	λε	ρμα	hour 3
+Sagittarius	ω=4;28	δ	κη	κθ	ρμ[?]	hour 4
+Sagittarius	ω=4;28	ε	ιη[?]	ιθ	ρμϛ	hour 5
+Sagittarius	ω=4;28	ϛ	α	ιδ	νδ	hour 6
+Sagittarius	ω=4;28	ζ	ι	λ	νδ	hour 7
+Sagittarius	ω=4;28	η	ιϛ	μϛ	λα	hour 8
+Sagittarius	ω=4;28	θ	ιζ	μζ	λα	hour 9
+Sagittarius	ω=4;28	ι	ιζ	νϛ	λκ[?]	hour 10
+Sagittarius	ω=4;28	ια	κγ	νθ	κβ	hour 11
+Sagittarius	ω=4;28	ιβ	κγ[?]	[?]	νϛ	hour 12
+
+# === ML TRAINING NOTES ===
+# This page is structurally DIFFERENT from the ascension tables:
+#
+# 1. SIX small sub-tables per folio instead of THREE large ones
+# 2. Each sub-table has its OWN header parameter (the "ὧ X Y" value)
+# 3. Values are DISCRETE (not cumulative) — no monotonicity to validate against
+# 4. The header pattern "ὧ ζ νζ" decreases through the zodiac:
+#    Cancer 7;57 → Leo 7;22 → ... → Libra 6 → Scorpio 5;12 → Sagittarius 4;28
+#    This decreasing pattern suggests a SEASONAL parameter (perhaps day-length deficit
+#    from 6 equinoctial hours, related to solar declination)
+#
+# Treat this as a SEPARATE PAGE CLASS for ML:
+#   - Multi-table layout detection (sub-table grid)
+#   - Per-sub-table header parsing (sign name + sexagesimal parameter)
+#   - Non-monotonic value validation (cross-reference between adjacent hours)
+#
+# Validation hints:
+#   - col_M values often peak around hour 4-5, suggesting solar/lunar maximum at noon-adjacent hours
+#   - col_per often has a near-discontinuity around hour 6-7 (parallax zero-crossing?)
+#   - Last hour (ιβ) often resembles first hour with adjustment

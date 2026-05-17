@@ -1,0 +1,77 @@
+{
+  "signum": "Vat.gr.1291",
+  "scan_date": "2026-05-17",
+  "manuscript_dir": "vat_gr_1291",
+  "applicable": true,
+  "model_confidence": "high",
+  "table_types": [
+    "handy_tables_oblique_ascensions",
+    "handy_tables_right_ascensions",
+    "handy_tables_declinations",
+    "handy_tables_solar_tables",
+    "almagest_star_catalogue"
+  ],
+  "klimata_present": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "klima5_folio_range": {
+    "start": "5r",
+    "end": "7r",
+    "note": "from training TSVs"
+  },
+  "confidence_scores": {
+    "applicable": true,
+    "confidence_level": "high",
+    "adjustment_factor": 1.0,
+    "flat_model": {
+      "expected_rmse": {
+        "anaph_deg": 0.8,
+        "hour_h": 0.59,
+        "chron_min": 20.9
+      },
+      "transcribable_pct": {
+        "anaph": 99.7,
+        "hour": 92.6,
+        "chron": 64.7
+      }
+    },
+    "topo_model": {
+      "expected_rmse": {
+        "anaph_deg": 3.39,
+        "hour_h": 0.35,
+        "chron_min": 11.8
+      },
+      "transcribable_pct": {
+        "anaph": 98.8,
+        "hour": 95.6,
+        "chron": 80.1
+      }
+    },
+    "ensemble": {
+      "expected_rmse": {
+        "anaph_deg": 0.8,
+        "hour_h": 0.35,
+        "chron_min": 11.8
+      },
+      "transcribable_pct": {
+        "anaph": 99.7,
+        "hour": 95.6,
+        "chron": 80.1
+      }
+    },
+    "rows_predicted": 360,
+    "note": "Direct training source. Klima V oblique ascensions: flat RMSE~0.8° on anaph, topo RMSE~0.35h on hour."
+  },
+  "output_files": {
+    "flat": "manuscripts/vat_gr_1291/predicted_tables/klima5_full_flat.tsv",
+    "topo": "manuscripts/vat_gr_1291/predicted_tables/klima5_full_topo.tsv",
+    "ensemble": "manuscripts/vat_gr_1291/predicted_tables/klima5_ensemble.tsv"
+  },
+  "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+}

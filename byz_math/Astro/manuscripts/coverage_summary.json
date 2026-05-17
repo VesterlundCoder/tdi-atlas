@@ -1,0 +1,263 @@
+{
+  "Vat.gr.1291": {
+    "applicable": true,
+    "model_confidence": "high",
+    "table_types": [
+      "handy_tables_oblique_ascensions",
+      "handy_tables_right_ascensions",
+      "handy_tables_declinations",
+      "handy_tables_solar_tables",
+      "almagest_star_catalogue"
+    ],
+    "ensemble_rmse": {
+      "anaph_deg": 0.8,
+      "hour_h": 0.35,
+      "chron_min": 11.8
+    },
+    "ensemble_pct_T": 100.0,
+    "ensemble_pct_U": 0.0,
+    "ensemble_pct_O": 0.0,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.1594": {
+    "applicable": true,
+    "model_confidence": "high",
+    "table_types": [
+      "handy_tables_oblique_ascensions",
+      "almagest_tables"
+    ],
+    "ensemble_rmse": {
+      "anaph_deg": 0.8,
+      "hour_h": 0.35,
+      "chron_min": 11.8
+    },
+    "ensemble_pct_T": 100.0,
+    "ensemble_pct_U": 0.0,
+    "ensemble_pct_O": 0.0,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.208": {
+    "applicable": true,
+    "model_confidence": "high",
+    "table_types": [
+      "handy_tables_oblique_ascensions"
+    ],
+    "ensemble_rmse": {
+      "anaph_deg": 0.8,
+      "hour_h": 0.35,
+      "chron_min": 11.8
+    },
+    "ensemble_pct_T": 100.0,
+    "ensemble_pct_U": 0.0,
+    "ensemble_pct_O": 0.0,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.184": {
+    "applicable": true,
+    "model_confidence": "high",
+    "table_types": [
+      "handy_tables_oblique_ascensions",
+      "theon_scholia"
+    ],
+    "ensemble_rmse": {
+      "anaph_deg": 0.8,
+      "hour_h": 0.35,
+      "chron_min": 11.8
+    },
+    "ensemble_pct_T": 100.0,
+    "ensemble_pct_U": 0.0,
+    "ensemble_pct_O": 0.0,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.211": {
+    "applicable": true,
+    "model_confidence": "medium",
+    "table_types": [
+      "handy_tables_oblique_ascensions",
+      "persian_byzantine_tables"
+    ],
+    "ensemble_rmse": {
+      "anaph_deg": 1.6,
+      "hour_h": 0.7,
+      "chron_min": 23.6
+    },
+    "ensemble_pct_T": 0.0,
+    "ensemble_pct_U": 100.0,
+    "ensemble_pct_O": 0.0,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.792": {
+    "applicable": false,
+    "model_confidence": "low",
+    "table_types": [
+      "persian_byzantine_tribiblos",
+      "mean_motion_tables",
+      "equation_tables",
+      "planetary_tables"
+    ],
+    "ensemble_rmse": {},
+    "ensemble_pct_T": 0,
+    "ensemble_pct_U": 0,
+    "ensemble_pct_O": 100,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.1058": {
+    "applicable": false,
+    "model_confidence": "low",
+    "table_types": [
+      "persian_syntaxis_chrysokokkes",
+      "mean_motion_tables"
+    ],
+    "ensemble_rmse": {},
+    "ensemble_pct_T": 0,
+    "ensemble_pct_U": 0,
+    "ensemble_pct_O": 100,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.1059": {
+    "applicable": false,
+    "model_confidence": "low",
+    "table_types": [
+      "persian_byzantine_tribiblos",
+      "mean_motion_tables",
+      "equation_tables"
+    ],
+    "ensemble_rmse": {},
+    "ensemble_pct_T": 0,
+    "ensemble_pct_U": 0,
+    "ensemble_pct_O": 100,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.1056": {
+    "applicable": false,
+    "model_confidence": "none",
+    "table_types": [
+      "arabo_byzantine_tables",
+      "arabic_star_lists_greek",
+      "astrological_tables"
+    ],
+    "ensemble_rmse": {},
+    "ensemble_pct_T": 0,
+    "ensemble_pct_U": 0,
+    "ensemble_pct_O": 100,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.1047": {
+    "applicable": false,
+    "model_confidence": "low",
+    "table_types": [
+      "persian_syntaxis_chrysokokkes"
+    ],
+    "ensemble_rmse": {},
+    "ensemble_pct_T": 0,
+    "ensemble_pct_U": 0,
+    "ensemble_pct_O": 100,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.gr.198": {
+    "applicable": true,
+    "model_confidence": "medium",
+    "table_types": [
+      "astronomical_tables_mixed",
+      "theon_commentary_excerpts"
+    ],
+    "ensemble_rmse": {
+      "anaph_deg": 1.6,
+      "hour_h": 0.7,
+      "chron_min": 23.6
+    },
+    "ensemble_pct_T": 0.0,
+    "ensemble_pct_U": 100.0,
+    "ensemble_pct_O": 0.0,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  },
+  "Vat.pal.gr.278": {
+    "applicable": true,
+    "model_confidence": "medium",
+    "table_types": [
+      "paradosis_argyros",
+      "handy_tables_derived"
+    ],
+    "ensemble_rmse": {
+      "anaph_deg": 1.6,
+      "hour_h": 0.7,
+      "chron_min": 23.6
+    },
+    "ensemble_pct_T": 0.0,
+    "ensemble_pct_U": 100.0,
+    "ensemble_pct_O": 0.0,
+    "flat_best_for": [
+      "anaph"
+    ],
+    "topo_best_for": [
+      "hour",
+      "chron"
+    ]
+  }
+}

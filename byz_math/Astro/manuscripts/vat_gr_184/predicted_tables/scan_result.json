@@ -1,0 +1,74 @@
+{
+  "signum": "Vat.gr.184",
+  "scan_date": "2026-05-17",
+  "manuscript_dir": "vat_gr_184",
+  "applicable": true,
+  "model_confidence": "high",
+  "table_types": [
+    "handy_tables_oblique_ascensions",
+    "theon_scholia"
+  ],
+  "klimata_present": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "klima5_folio_range": {
+    "start": "unknown",
+    "end": "unknown",
+    "note": "requires manifest analysis"
+  },
+  "confidence_scores": {
+    "applicable": true,
+    "confidence_level": "high",
+    "adjustment_factor": 1.0,
+    "flat_model": {
+      "expected_rmse": {
+        "anaph_deg": 0.8,
+        "hour_h": 0.59,
+        "chron_min": 20.9
+      },
+      "transcribable_pct": {
+        "anaph": 99.7,
+        "hour": 92.6,
+        "chron": 64.7
+      }
+    },
+    "topo_model": {
+      "expected_rmse": {
+        "anaph_deg": 3.39,
+        "hour_h": 0.35,
+        "chron_min": 11.8
+      },
+      "transcribable_pct": {
+        "anaph": 98.8,
+        "hour": 95.6,
+        "chron": 80.1
+      }
+    },
+    "ensemble": {
+      "expected_rmse": {
+        "anaph_deg": 0.8,
+        "hour_h": 0.35,
+        "chron_min": 11.8
+      },
+      "transcribable_pct": {
+        "anaph": 99.7,
+        "hour": 95.6,
+        "chron": 80.1
+      }
+    },
+    "rows_predicted": 360,
+    "note": "Table values identical to other HT manuscripts; scholia pages excluded from table scan."
+  },
+  "output_files": {
+    "flat": "manuscripts/vat_gr_184/predicted_tables/klima5_full_flat.tsv",
+    "topo": "manuscripts/vat_gr_184/predicted_tables/klima5_full_topo.tsv",
+    "ensemble": "manuscripts/vat_gr_184/predicted_tables/klima5_ensemble.tsv"
+  },
+  "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+}

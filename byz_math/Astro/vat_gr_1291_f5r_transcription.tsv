@@ -1,0 +1,105 @@
+# Vat.gr.1291, f.5r — Ptolemy, Handy Tables: Oblique Ascensions for Klima V (Byzantium, ~41°N)
+# Header: ΚΛΙΜΑΤΟΣ ΔΙΑ ΒΥΖΑΝΤΙΟΥ· ΠΑΡΑΛΛΗΛΟΥ ὧ ἴση ἡ μεγίστη ἡμέρα ιε ...
+# Three zodiac signs on this folio: ΚΡΙΟΥ (Aries), ΤΑΥΡΟΥ (Taurus), ΔΙΔΥΜΩΝ (Gemini)
+# Columns per sign: degree | ΑΝΑΦΟΡΑΙ (asc. time, deg) | ὩΡΩΝ (hours) | ΧΡΟΝΩΝ (time-degrees)
+# Format: diplomatic_raw [decimal]
+# Notes: ō = zero (οὐδέν); ϛ = stigma (6); ϟ = koppa (90); θ̄ with bar in column = "9" not letter
+# Some cells have a bar over numerals to mark "this is a numeral" — not transcribed separately here.
+# UNCERTAIN readings marked with [?]
+
+sign	deg	anaph_deg_raw	anaph_min_raw	hour_raw	chron_raw	deg_dec	anaph_dec	hour_dec	chron_dec
+# === ΚΡΙΟΥ (Aries) ===
+Aries	α	ō	λβ	ιε	δ	1	0;32	15	4
+Aries	β	α	δ	ιε	η	2	1;4	15	8
+Aries	γ	α	λϛ	ιε	ιβ	3	1;36	15	12
+Aries	δ	β	θ	ιε	ιϛ	4	2;9	15	16
+Aries	ε	β	μβ	ιε	κ	5	2;42	15	20
+Aries	ϛ	γ	ιδ	ιε	κγ	6	3;14	15	23
+Aries	ζ	γ	μϛ	ιε	κζ	7	3;46	15	27
+Aries	η	δ	ιθ	ιε	λα	8	4;19	15	31
+Aries	θ	δ	να	ιε	λδ	9	4;51	15	34
+Aries	ι	ε	κδ	ιε	λη	10	5;24	15	38
+Aries	ια	ε	νϛ	ιε	μα	11	5;56	15	41
+Aries	ιβ	ϛ	κθ	ιε	με	12	6;29	15	45
+Aries	ιγ	ζ	α	ιε	μη	13	7;1	15	48
+Aries	ιδ	ζ	λδ	ιε	νβ	14	7;34	15	52
+Aries	ιε	η	ζ	ιε	νϛ	15	8;7	15	56
+Aries	ιϛ	η	μ	ιϛ	ō	16	8;40	16	0
+Aries	ιζ	θ	ιγ	ιϛ	δ	17	9;13	16	4
+Aries	ιη	θ	μζ	ιϛ	η	18	9;47	16	8
+Aries	ιθ	ι	κα	ιϛ	ιγ	19	10;21	16	13
+Aries	κ	ι	νδ	ιϛ	ιε[?]	20	10;54	16	15[?]
+Aries	κα	ια	κθ	ιϛ	ιθ	21	11;29	16	19
+Aries	κβ	ιβ	γ	ιϛ	κγ	22	12;3	16	23
+Aries	κγ	ιβ	λη	ιϛ	κϛ	23	12;38	16	26
+Aries	κδ	ιγ	ιβ	ιϛ	λ	24	13;12	16	30
+Aries	κε	ιγ	μζ	ιϛ	λδ	25	13;47	16	34
+Aries	κϛ	ιδ	κβ	ιϛ	λζ	26	14;22	16	37
+Aries	κζ	ιδ	νζ	ιϛ	μα[?]	27	14;57	16	41[?]
+Aries	κη	ιε	λβ	ιϛ	με	28	15;32	16	45
+Aries	κθ	ιϛ	η	ιϛ	μζ	29	16;8	16	47
+Aries	λ	ιϛ	μγ	ιϛ	να	30	16;43	16	51
+
+# === ΤΑΥΡΟΥ (Taurus) — values are CUMULATIVE from start of Aries ===
+Taurus	α	ιζ	ιθ	ιϛ	νδ	1	17;19	16	54
+Taurus	β	ιζ	νζ	ιϛ	νη	2	17;57	16	58
+Taurus	γ	ιη	λδ	ιζ	ε	3	18;34	17	5
+Taurus	δ	ιθ	ιβ	ιζ	ε	4	19;12	17	5
+Taurus	ε	ιθ	μθ	ιζ	η	5	19;49	17	8
+Taurus	ϛ	κ	κζ	ιζ	ιβ	6	20;27	17	12
+Taurus	ζ	κα	δ	ιζ	ιϛ	7	21;4	17	16
+Taurus	η	κα	μβ	ιζ	ιθ[?]	8	21;42	17	19[?]
+Taurus	θ	κβ	ιθ	ιζ	κγ	9	22;19	17	23
+Taurus	ι	κβ	μζ	ιζ	κζ	10	22;47	17	27
+Taurus	ια	κγ	λζ	ιζ	λ[?]	11	23;37	17	30[?]
+Taurus	ιβ	κγ	ιη	ιζ	λδ	12	23;18[?]	17	34
+Taurus	ιγ	κδ	νη	ιζ	λη	13	24;58	17	38
+Taurus	ιδ	κε	λϛ	ιζ	μα	14	25;36	17	41
+Taurus	ιε	κϛ	ιδ	ιζ	με	15	26;14	17	45
+Taurus	ιϛ	κζ	μδ[?]	ιζ	μθ	16	27;44[?]	17	49
+Taurus	ιζ	κη	κγ	ιζ	νβ	17	28;23	17	52
+Taurus	ιη	κθ	δ	ιζ	νϛ	18	29;4	17	56
+Taurus	ιθ	κθ	μϛ	ιζ	νθ[?]	19	29;46	17	59[?]
+Taurus	κ	λ	κζ	ιη	γ	20	30;27	18	3
+Taurus	κα	λα	θ	ιη	ζ	21	31;9	18	7
+Taurus	κβ	λα	να	ιη	ι	22	31;51	18	10
+Taurus	κγ	λβ	λγ	ιη	ιδ	23	32;33	18	14
+Taurus	κδ	λβ	ιε[?]	ιη	ιη	24	32;15[?]	18	18
+Taurus	κε	λγ	νζ	ιη	κα	25	33;57	18	21
+Taurus	κϛ	λδ	μ	ιη	κε	26	34;40	18	25
+Taurus	κζ	λε	κβ	ιη	κθ	27	35;22	18	29
+Taurus	κη	λϛ	ε	ιη	λβ	28	36;5	18	32
+Taurus	κθ	λϛ	μη	ιη	λϛ	29	36;48	18	36
+Taurus	λ	λζ	λα	ιη	μ	30	37;31	18	40
+
+# === ΔΙΔΥΜΩΝ (Gemini) — cumulative from start of Aries ===
+Gemini	α	λη	θ	ιη	μγ[?]	1	38;9	18	43[?]
+Gemini	β	λη	νβ[?]	ιη	μζ	2	38;52[?]	18	47
+Gemini	γ	λθ	λϛ	ιη	να	3	39;36	18	51
+Gemini	δ	μ	κ[?]	ιη	νδ	4	40;20[?]	18	54
+Gemini	ε	μα	γ	ιη	νζ[?]	5	41;3	18	57[?]
+Gemini	ϛ	μα	μϛ	ιθ	α	6	41;46	19	1
+Gemini	ζ	μβ	λ	ιθ	δ	7	42;30	19	4
+Gemini	η	μγ	ιδ	ιθ	η[?]	8	43;14	19	8[?]
+Gemini	θ	μγ	νη	ιθ	ια[?]	9	43;58	19	11[?]
+Gemini	ι	μδ	μβ	ιθ	ιδ[?]	10	44;42	19	14[?]
+Gemini	ια	με	κϛ	ιθ	ιη	11	45;26	19	18
+Gemini	ιβ	μϛ	ι	ιθ	κα	12	46;10	19	21
+Gemini	ιγ	μϛ	νδ	ιθ	κε	13	46;54	19	25
+Gemini	ιδ	μζ	λη	ιθ	κη	14	47;38	19	28
+Gemini	ιε	μη	κγ	ιθ	λα[?]	15	48;23	19	31[?]
+Gemini	ιϛ	μθ	η	ιθ	λδ[?]	16	49;8	19	34[?]
+Gemini	ιζ	μθ	νβ	ιθ	λζ	17	49;52	19	37
+Gemini	ιη	ν	λϛ	ιθ	μ	18	50;36	19	40
+Gemini	ιθ	να	κα	ιθ	μγ	19	51;21	19	43
+Gemini	κ	νβ	ϛ	ιθ	μϛ[?]	20	52;6	19	46[?]
+Gemini	κα	νβ	να[?]	ιθ	μθ	21	52;51[?]	19	49
+Gemini	κβ	νγ	λϛ[?]	ιθ	νβ	22	53;36[?]	19	52
+Gemini	κγ	νδ	κ	ιθ	νε	23	54;20	19	55
+Gemini	κδ	νε	ε	ιθ	νη	24	55;5	19	58
+Gemini	κε	νε	ν	κ	α	25	55;50	20	1
+Gemini	κϛ	νϛ	λε	κ	δ[?]	26	56;35	20	4[?]
+Gemini	κζ	νζ	κ	κ	ζ	27	57;20	20	7
+Gemini	κη	νη	ε	κ	ι	28	58;5	20	10
+Gemini	κθ	νη	ν	κ	ιγ[?]	29	58;50	20	13[?]
+Gemini	λ	νθ	λε	κ	ιϛ	30	59;35	20	16

@@ -1,0 +1,1037 @@
+{
+  "signum": "Vat.gr.1047",
+  "shelfmark": "Vat.gr.1047",
+  "manifest_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1047/manifest.json",
+  "date_range": "14th century",
+  "script": "Byzantine minuscule",
+  "content_summary": "Persian Syntaxis (Chrysokokkes) at ff.12-39v",
+  "table_types": [
+    "persian_syntaxis_chrysokokkes"
+  ],
+  "model_confidence": "low",
+  "iiif_metadata": [
+    {
+      "label": "Shelfmark",
+      "value": "Vat.gr.1047"
+    }
+  ],
+  "n_canvases": 127,
+  "canvases": [
+    {
+      "page_num": 1,
+      "label": "1",
+      "filename": "0001_1.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0001.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0001.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 2,
+      "label": "2",
+      "filename": "0002_2.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0002.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0002.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 3,
+      "label": "3",
+      "filename": "0003_3.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0003.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0003.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 4,
+      "label": "4",
+      "filename": "0004_4.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0004.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0004.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 5,
+      "label": "5",
+      "filename": "0005_5.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0005.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0005.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 6,
+      "label": "6",
+      "filename": "0006_6.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0006.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0006.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 7,
+      "label": "7",
+      "filename": "0007_7.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0007.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0007.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 8,
+      "label": "8",
+      "filename": "0008_8.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0008.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0008.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 9,
+      "label": "9",
+      "filename": "0009_9.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0009.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0009.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 10,
+      "label": "10",
+      "filename": "0010_10.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0010.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0010.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 11,
+      "label": "11",
+      "filename": "0011_11.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0011.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0011.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 12,
+      "label": "12",
+      "filename": "0012_12.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0012.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0012.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 13,
+      "label": "13",
+      "filename": "0013_13.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0013.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0013.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 14,
+      "label": "14",
+      "filename": "0014_14.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0014.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0014.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 15,
+      "label": "15",
+      "filename": "0015_15.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0015.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0015.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 16,
+      "label": "16",
+      "filename": "0016_16.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0016.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0016.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 17,
+      "label": "17",
+      "filename": "0017_17.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0017.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0017.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 18,
+      "label": "18",
+      "filename": "0018_18.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0018.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0018.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 19,
+      "label": "19",
+      "filename": "0019_19.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0019.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0019.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 20,
+      "label": "20",
+      "filename": "0020_20.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0020.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0020.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 21,
+      "label": "21",
+      "filename": "0021_21.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0021.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0021.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 22,
+      "label": "22",
+      "filename": "0022_22.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0022.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0022.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 23,
+      "label": "23",
+      "filename": "0023_23.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0023.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0023.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 24,
+      "label": "24",
+      "filename": "0024_24.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0024.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0024.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 25,
+      "label": "25",
+      "filename": "0025_25.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0025.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0025.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 26,
+      "label": "26",
+      "filename": "0026_26.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0026.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0026.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 27,
+      "label": "27",
+      "filename": "0027_27.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0027.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0027.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 28,
+      "label": "28",
+      "filename": "0028_28.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0028.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0028.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 29,
+      "label": "29",
+      "filename": "0029_29.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0029.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0029.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 30,
+      "label": "30",
+      "filename": "0030_30.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0030.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0030.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 31,
+      "label": "31",
+      "filename": "0031_31.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0031.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0031.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 32,
+      "label": "32",
+      "filename": "0032_32.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0032.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0032.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 33,
+      "label": "33",
+      "filename": "0033_33.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0033.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0033.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 34,
+      "label": "34",
+      "filename": "0034_34.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0034.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0034.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 35,
+      "label": "35",
+      "filename": "0035_35.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0035.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0035.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 36,
+      "label": "36",
+      "filename": "0036_36.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0036.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0036.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 37,
+      "label": "37",
+      "filename": "0037_37.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0037.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0037.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 38,
+      "label": "38",
+      "filename": "0038_38.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0038.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0038.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 39,
+      "label": "39",
+      "filename": "0039_39.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0039.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0039.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 40,
+      "label": "40",
+      "filename": "0040_40.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0040.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0040.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 41,
+      "label": "41",
+      "filename": "0041_41.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0041.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0041.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 42,
+      "label": "42",
+      "filename": "0042_42.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0042.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0042.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 43,
+      "label": "43",
+      "filename": "0043_43.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0043.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0043.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 44,
+      "label": "44",
+      "filename": "0044_44.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0044.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0044.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 45,
+      "label": "45",
+      "filename": "0045_45.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0045.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0045.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 46,
+      "label": "46",
+      "filename": "0046_46.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0046.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0046.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 47,
+      "label": "47",
+      "filename": "0047_47.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0047.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0047.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 48,
+      "label": "48",
+      "filename": "0048_48.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0048.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0048.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 49,
+      "label": "49",
+      "filename": "0049_49.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0049.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0049.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 50,
+      "label": "50",
+      "filename": "0050_50.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0050.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0050.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 51,
+      "label": "51",
+      "filename": "0051_51.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0051.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0051.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 52,
+      "label": "52",
+      "filename": "0052_52.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0052.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0052.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 53,
+      "label": "53",
+      "filename": "0053_53.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0053.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0053.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 54,
+      "label": "54",
+      "filename": "0054_54.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0054.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0054.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 55,
+      "label": "55",
+      "filename": "0055_55.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0055.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0055.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 56,
+      "label": "56",
+      "filename": "0056_56.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0056.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0056.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 57,
+      "label": "57",
+      "filename": "0057_57.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0057.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0057.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 58,
+      "label": "58",
+      "filename": "0058_58.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0058.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0058.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 59,
+      "label": "59",
+      "filename": "0059_59.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0059.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0059.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 60,
+      "label": "60",
+      "filename": "0060_60.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0060.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0060.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 61,
+      "label": "61",
+      "filename": "0061_61.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0061.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0061.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 62,
+      "label": "62",
+      "filename": "0062_62.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0062.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0062.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 63,
+      "label": "63",
+      "filename": "0063_63.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0063.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0063.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 64,
+      "label": "64",
+      "filename": "0064_64.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0064.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0064.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 65,
+      "label": "65",
+      "filename": "0065_65.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0065.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0065.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 66,
+      "label": "66",
+      "filename": "0066_66.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0066.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0066.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 67,
+      "label": "67",
+      "filename": "0067_67.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0067.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0067.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 68,
+      "label": "68",
+      "filename": "0068_68.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0068.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0068.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 69,
+      "label": "69",
+      "filename": "0069_69.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0069.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0069.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 70,
+      "label": "70",
+      "filename": "0070_70.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0070.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0070.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 71,
+      "label": "71",
+      "filename": "0071_71.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0071.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0071.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 72,
+      "label": "72",
+      "filename": "0072_72.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0072.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0072.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 73,
+      "label": "73",
+      "filename": "0073_73.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0073.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0073.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 74,
+      "label": "74",
+      "filename": "0074_74.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0074.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0074.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 75,
+      "label": "75",
+      "filename": "0075_75.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0075.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0075.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 76,
+      "label": "76",
+      "filename": "0076_76.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0076.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0076.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 77,
+      "label": "77",
+      "filename": "0077_77.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0077.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0077.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 78,
+      "label": "78",
+      "filename": "0078_78.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0078.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0078.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 79,
+      "label": "79",
+      "filename": "0079_79.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0079.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0079.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 80,
+      "label": "80",
+      "filename": "0080_80.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0080.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0080.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 81,
+      "label": "81",
+      "filename": "0081_81.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0081.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0081.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 82,
+      "label": "82",
+      "filename": "0082_82.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0082.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0082.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 83,
+      "label": "83",
+      "filename": "0083_83.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0083.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0083.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 84,
+      "label": "84",
+      "filename": "0084_84.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0084.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0084.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 85,
+      "label": "85",
+      "filename": "0085_85.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0085.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0085.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 86,
+      "label": "86",
+      "filename": "0086_86.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0086.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0086.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 87,
+      "label": "87",
+      "filename": "0087_87.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0087.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0087.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 88,
+      "label": "88",
+      "filename": "0088_88.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0088.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0088.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 89,
+      "label": "89",
+      "filename": "0089_89.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0089.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0089.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 90,
+      "label": "90",
+      "filename": "0090_90.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0090.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0090.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 91,
+      "label": "91",
+      "filename": "0091_91.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0091.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0091.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 92,
+      "label": "92",
+      "filename": "0092_92.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0092.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0092.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 93,
+      "label": "93",
+      "filename": "0093_93.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0093.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0093.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 94,
+      "label": "94",
+      "filename": "0094_94.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0094.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0094.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 95,
+      "label": "95",
+      "filename": "0095_95.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0095.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0095.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 96,
+      "label": "96",
+      "filename": "0096_96.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0096.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0096.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 97,
+      "label": "97",
+      "filename": "0097_97.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0097.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0097.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 98,
+      "label": "98",
+      "filename": "0098_98.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0098.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0098.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 99,
+      "label": "99",
+      "filename": "0099_99.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0099.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0099.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 100,
+      "label": "100",
+      "filename": "0100_100.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0100.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0100.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 101,
+      "label": "101",
+      "filename": "0101_101.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0101.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0101.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 102,
+      "label": "102",
+      "filename": "0102_102.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0102.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0102.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 103,
+      "label": "103",
+      "filename": "0103_103.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0103.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0103.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 104,
+      "label": "104",
+      "filename": "0104_104.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0104.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0104.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 105,
+      "label": "105",
+      "filename": "0105_105.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0105.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0105.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 106,
+      "label": "106",
+      "filename": "0106_106.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0106.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0106.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 107,
+      "label": "107",
+      "filename": "0107_107.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0107.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0107.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 108,
+      "label": "108",
+      "filename": "0108_108.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0108.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0108.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 109,
+      "label": "109",
+      "filename": "0109_109.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0109.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0109.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 110,
+      "label": "110",
+      "filename": "0110_110.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0110.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0110.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 111,
+      "label": "111",
+      "filename": "0111_111.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0111.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0111.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 112,
+      "label": "112",
+      "filename": "0112_112.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0112.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0112.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 113,
+      "label": "113",
+      "filename": "0113_113.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0113.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0113.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 114,
+      "label": "114",
+      "filename": "0114_114.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0114.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0114.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 115,
+      "label": "115",
+      "filename": "0115_115.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0115.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0115.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 116,
+      "label": "116",
+      "filename": "0116_116.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0116.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0116.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 117,
+      "label": "117",
+      "filename": "0117_117.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0117.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0117.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 118,
+      "label": "118",
+      "filename": "0118_118.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0118.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0118.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 119,
+      "label": "119",
+      "filename": "0119_119.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0119.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0119.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 120,
+      "label": "120",
+      "filename": "0120_120.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0120.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0120.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 121,
+      "label": "121",
+      "filename": "0121_121.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0121.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0121.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 122,
+      "label": "122",
+      "filename": "0122_122.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0122.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0122.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 123,
+      "label": "123",
+      "filename": "0123_123.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0123.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0123.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 124,
+      "label": "124",
+      "filename": "0124_124.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0124.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0124.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 125,
+      "label": "125",
+      "filename": "0125_125.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0125.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0125.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 126,
+      "label": "126",
+      "filename": "0126_126.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0126.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0126.tif.jpg",
+      "is_known_table_folio": false
+    },
+    {
+      "page_num": 127,
+      "label": "127",
+      "filename": "0127_127.jpg",
+      "image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1047/Vat.gr.1047_0127.jp2/full/2000,/0/default.jpg",
+      "thumb_url": "https://digi.vatlib.it/pub/digit/MSS_Vat.gr.1047/thumb/Vat.gr.1047_0127.tif.jpg",
+      "is_known_table_folio": false
+    }
+  ]
+}

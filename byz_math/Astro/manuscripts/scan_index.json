@@ -1,0 +1,574 @@
+{
+  "Vat.gr.1291": {
+    "signum": "Vat.gr.1291",
+    "scan_date": "2026-05-17",
+    "manuscript_dir": "vat_gr_1291",
+    "applicable": true,
+    "model_confidence": "high",
+    "table_types": [
+      "handy_tables_oblique_ascensions",
+      "handy_tables_right_ascensions",
+      "handy_tables_declinations",
+      "handy_tables_solar_tables",
+      "almagest_star_catalogue"
+    ],
+    "klimata_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "klima5_folio_range": {
+      "start": "5r",
+      "end": "7r",
+      "note": "from training TSVs"
+    },
+    "confidence_scores": {
+      "applicable": true,
+      "confidence_level": "high",
+      "adjustment_factor": 1.0,
+      "flat_model": {
+        "expected_rmse": {
+          "anaph_deg": 0.8,
+          "hour_h": 0.59,
+          "chron_min": 20.9
+        },
+        "transcribable_pct": {
+          "anaph": 99.7,
+          "hour": 92.6,
+          "chron": 64.7
+        }
+      },
+      "topo_model": {
+        "expected_rmse": {
+          "anaph_deg": 3.39,
+          "hour_h": 0.35,
+          "chron_min": 11.8
+        },
+        "transcribable_pct": {
+          "anaph": 98.8,
+          "hour": 95.6,
+          "chron": 80.1
+        }
+      },
+      "ensemble": {
+        "expected_rmse": {
+          "anaph_deg": 0.8,
+          "hour_h": 0.35,
+          "chron_min": 11.8
+        },
+        "transcribable_pct": {
+          "anaph": 99.7,
+          "hour": 95.6,
+          "chron": 80.1
+        }
+      },
+      "rows_predicted": 360,
+      "note": "Direct training source. Klima V oblique ascensions: flat RMSE~0.8° on anaph, topo RMSE~0.35h on hour."
+    },
+    "output_files": {
+      "flat": "manuscripts/vat_gr_1291/predicted_tables/klima5_full_flat.tsv",
+      "topo": "manuscripts/vat_gr_1291/predicted_tables/klima5_full_topo.tsv",
+      "ensemble": "manuscripts/vat_gr_1291/predicted_tables/klima5_ensemble.tsv"
+    },
+    "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+  },
+  "Vat.gr.1594": {
+    "signum": "Vat.gr.1594",
+    "scan_date": "2026-05-17",
+    "manuscript_dir": "vat_gr_1594",
+    "applicable": true,
+    "model_confidence": "high",
+    "table_types": [
+      "handy_tables_oblique_ascensions",
+      "almagest_tables"
+    ],
+    "klimata_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "klima5_folio_range": {
+      "start": "unknown",
+      "end": "unknown",
+      "note": "requires manifest analysis"
+    },
+    "confidence_scores": {
+      "applicable": true,
+      "confidence_level": "high",
+      "adjustment_factor": 1.0,
+      "flat_model": {
+        "expected_rmse": {
+          "anaph_deg": 0.8,
+          "hour_h": 0.59,
+          "chron_min": 20.9
+        },
+        "transcribable_pct": {
+          "anaph": 99.7,
+          "hour": 92.6,
+          "chron": 64.7
+        }
+      },
+      "topo_model": {
+        "expected_rmse": {
+          "anaph_deg": 3.39,
+          "hour_h": 0.35,
+          "chron_min": 11.8
+        },
+        "transcribable_pct": {
+          "anaph": 98.8,
+          "hour": 95.6,
+          "chron": 80.1
+        }
+      },
+      "ensemble": {
+        "expected_rmse": {
+          "anaph_deg": 0.8,
+          "hour_h": 0.35,
+          "chron_min": 11.8
+        },
+        "transcribable_pct": {
+          "anaph": 99.7,
+          "hour": 95.6,
+          "chron": 80.1
+        }
+      },
+      "rows_predicted": 360,
+      "note": "Same table type as training data; different 9th-century scribal hand."
+    },
+    "output_files": {
+      "flat": "manuscripts/vat_gr_1594/predicted_tables/klima5_full_flat.tsv",
+      "topo": "manuscripts/vat_gr_1594/predicted_tables/klima5_full_topo.tsv",
+      "ensemble": "manuscripts/vat_gr_1594/predicted_tables/klima5_ensemble.tsv"
+    },
+    "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+  },
+  "Vat.gr.208": {
+    "signum": "Vat.gr.208",
+    "scan_date": "2026-05-17",
+    "manuscript_dir": "vat_gr_208",
+    "applicable": true,
+    "model_confidence": "high",
+    "table_types": [
+      "handy_tables_oblique_ascensions"
+    ],
+    "klimata_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "klima5_folio_range": {
+      "start": "unknown",
+      "end": "unknown",
+      "note": "requires manifest analysis"
+    },
+    "confidence_scores": {
+      "applicable": true,
+      "confidence_level": "high",
+      "adjustment_factor": 1.0,
+      "flat_model": {
+        "expected_rmse": {
+          "anaph_deg": 0.8,
+          "hour_h": 0.59,
+          "chron_min": 20.9
+        },
+        "transcribable_pct": {
+          "anaph": 99.7,
+          "hour": 92.6,
+          "chron": 64.7
+        }
+      },
+      "topo_model": {
+        "expected_rmse": {
+          "anaph_deg": 3.39,
+          "hour_h": 0.35,
+          "chron_min": 11.8
+        },
+        "transcribable_pct": {
+          "anaph": 98.8,
+          "hour": 95.6,
+          "chron": 80.1
+        }
+      },
+      "ensemble": {
+        "expected_rmse": {
+          "anaph_deg": 0.8,
+          "hour_h": 0.35,
+          "chron_min": 11.8
+        },
+        "transcribable_pct": {
+          "anaph": 99.7,
+          "hour": 95.6,
+          "chron": 80.1
+        }
+      },
+      "rows_predicted": 360,
+      "note": "Same Ptolemaic values, different script. Cross-hand generalisation target."
+    },
+    "output_files": {
+      "flat": "manuscripts/vat_gr_208/predicted_tables/klima5_full_flat.tsv",
+      "topo": "manuscripts/vat_gr_208/predicted_tables/klima5_full_topo.tsv",
+      "ensemble": "manuscripts/vat_gr_208/predicted_tables/klima5_ensemble.tsv"
+    },
+    "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+  },
+  "Vat.gr.184": {
+    "signum": "Vat.gr.184",
+    "scan_date": "2026-05-17",
+    "manuscript_dir": "vat_gr_184",
+    "applicable": true,
+    "model_confidence": "high",
+    "table_types": [
+      "handy_tables_oblique_ascensions",
+      "theon_scholia"
+    ],
+    "klimata_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "klima5_folio_range": {
+      "start": "unknown",
+      "end": "unknown",
+      "note": "requires manifest analysis"
+    },
+    "confidence_scores": {
+      "applicable": true,
+      "confidence_level": "high",
+      "adjustment_factor": 1.0,
+      "flat_model": {
+        "expected_rmse": {
+          "anaph_deg": 0.8,
+          "hour_h": 0.59,
+          "chron_min": 20.9
+        },
+        "transcribable_pct": {
+          "anaph": 99.7,
+          "hour": 92.6,
+          "chron": 64.7
+        }
+      },
+      "topo_model": {
+        "expected_rmse": {
+          "anaph_deg": 3.39,
+          "hour_h": 0.35,
+          "chron_min": 11.8
+        },
+        "transcribable_pct": {
+          "anaph": 98.8,
+          "hour": 95.6,
+          "chron": 80.1
+        }
+      },
+      "ensemble": {
+        "expected_rmse": {
+          "anaph_deg": 0.8,
+          "hour_h": 0.35,
+          "chron_min": 11.8
+        },
+        "transcribable_pct": {
+          "anaph": 99.7,
+          "hour": 95.6,
+          "chron": 80.1
+        }
+      },
+      "rows_predicted": 360,
+      "note": "Table values identical to other HT manuscripts; scholia pages excluded from table scan."
+    },
+    "output_files": {
+      "flat": "manuscripts/vat_gr_184/predicted_tables/klima5_full_flat.tsv",
+      "topo": "manuscripts/vat_gr_184/predicted_tables/klima5_full_topo.tsv",
+      "ensemble": "manuscripts/vat_gr_184/predicted_tables/klima5_ensemble.tsv"
+    },
+    "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+  },
+  "Vat.gr.211": {
+    "signum": "Vat.gr.211",
+    "scan_date": "2026-05-17",
+    "manuscript_dir": "vat_gr_211",
+    "applicable": true,
+    "model_confidence": "medium",
+    "table_types": [
+      "handy_tables_oblique_ascensions",
+      "persian_byzantine_tables"
+    ],
+    "klimata_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "klima5_folio_range": {
+      "start": "unknown",
+      "end": "unknown",
+      "note": "only for HT portion"
+    },
+    "confidence_scores": {
+      "applicable": true,
+      "confidence_level": "medium",
+      "adjustment_factor": 2.0,
+      "flat_model": {
+        "expected_rmse": {
+          "anaph_deg": 1.6,
+          "hour_h": 1.18,
+          "chron_min": 41.8
+        },
+        "transcribable_pct": {
+          "anaph": 99.4,
+          "hour": 85.2,
+          "chron": 29.4
+        }
+      },
+      "topo_model": {
+        "expected_rmse": {
+          "anaph_deg": 6.78,
+          "hour_h": 0.7,
+          "chron_min": 23.6
+        },
+        "transcribable_pct": {
+          "anaph": 97.6,
+          "hour": 91.2,
+          "chron": 60.1
+        }
+      },
+      "ensemble": {
+        "expected_rmse": {
+          "anaph_deg": 1.6,
+          "hour_h": 0.7,
+          "chron_min": 23.6
+        },
+        "transcribable_pct": {
+          "anaph": 99.4,
+          "hour": 91.2,
+          "chron": 60.1
+        }
+      },
+      "rows_predicted": 360,
+      "note": "HT portion: model applies with high confidence. Persian portion: model incompatible (different mathematical basis, epoch 1068 AD)."
+    },
+    "output_files": {
+      "flat": "manuscripts/vat_gr_211/predicted_tables/klima5_full_flat.tsv",
+      "topo": "manuscripts/vat_gr_211/predicted_tables/klima5_full_topo.tsv",
+      "ensemble": "manuscripts/vat_gr_211/predicted_tables/klima5_ensemble.tsv"
+    },
+    "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+  },
+  "Vat.gr.792": {
+    "signum": "Vat.gr.792",
+    "applicable": false,
+    "model_confidence": "low",
+    "table_types": [
+      "persian_byzantine_tribiblos",
+      "mean_motion_tables",
+      "equation_tables",
+      "planetary_tables"
+    ],
+    "reason": "Persian-Byzantine astronomical system (Shah Tables / Arjabhar). Different epoch, different mathematical basis. Models predict wrong absolute values. Can only verify tabular structure (monotonicity of cumulative columns, etc.).",
+    "output_files": [
+      "/Users/davidsvensson/Desktop/tdi-atlas/byz_math/Astro/manuscripts/vat_gr_792/predicted_tables/README_no_predictions.txt"
+    ]
+  },
+  "Vat.gr.1058": {
+    "signum": "Vat.gr.1058",
+    "applicable": false,
+    "model_confidence": "low",
+    "table_types": [
+      "persian_syntaxis_chrysokokkes",
+      "mean_motion_tables"
+    ],
+    "reason": "Persian Syntaxis (Zij-based): different table structure, different epoch (1283 Yazdigird era), different mean motions. Models predict wrong values.",
+    "output_files": [
+      "/Users/davidsvensson/Desktop/tdi-atlas/byz_math/Astro/manuscripts/vat_gr_1058/predicted_tables/README_no_predictions.txt"
+    ]
+  },
+  "Vat.gr.1059": {
+    "signum": "Vat.gr.1059",
+    "applicable": false,
+    "model_confidence": "low",
+    "table_types": [
+      "persian_byzantine_tribiblos",
+      "mean_motion_tables",
+      "equation_tables"
+    ],
+    "reason": "Same Persian-Byzantine content as 792. Different scribal hand — valuable for cross-hand study of Persian tables.",
+    "output_files": [
+      "/Users/davidsvensson/Desktop/tdi-atlas/byz_math/Astro/manuscripts/vat_gr_1059/predicted_tables/README_no_predictions.txt"
+    ]
+  },
+  "Vat.gr.1056": {
+    "signum": "Vat.gr.1056",
+    "applicable": false,
+    "model_confidence": "none",
+    "table_types": [
+      "arabo_byzantine_tables",
+      "arabic_star_lists_greek",
+      "astrological_tables"
+    ],
+    "reason": "Arabic-Greek astronomical tradition (likely Zij-based, 9th-12th c. Arabic sources). Entirely different from Ptolemaic Handy Tables. Models cannot predict values.",
+    "output_files": [
+      "/Users/davidsvensson/Desktop/tdi-atlas/byz_math/Astro/manuscripts/vat_gr_1056/predicted_tables/README_no_predictions.txt"
+    ]
+  },
+  "Vat.gr.1047": {
+    "signum": "Vat.gr.1047",
+    "applicable": false,
+    "model_confidence": "low",
+    "table_types": [
+      "persian_syntaxis_chrysokokkes"
+    ],
+    "reason": "Persian Syntaxis: same remarks as Vat.gr.1058. Signum T in Bardi stemma.",
+    "output_files": [
+      "/Users/davidsvensson/Desktop/tdi-atlas/byz_math/Astro/manuscripts/vat_gr_1047/predicted_tables/README_no_predictions.txt"
+    ]
+  },
+  "Vat.gr.198": {
+    "signum": "Vat.gr.198",
+    "scan_date": "2026-05-17",
+    "manuscript_dir": "vat_gr_198",
+    "applicable": true,
+    "model_confidence": "medium",
+    "table_types": [
+      "astronomical_tables_mixed",
+      "theon_commentary_excerpts"
+    ],
+    "klimata_present": "unknown",
+    "klima5_folio_range": {
+      "start": "unknown",
+      "end": "unknown"
+    },
+    "confidence_scores": {
+      "applicable": true,
+      "confidence_level": "medium",
+      "adjustment_factor": 2.0,
+      "flat_model": {
+        "expected_rmse": {
+          "anaph_deg": 1.6,
+          "hour_h": 1.18,
+          "chron_min": 41.8
+        },
+        "transcribable_pct": {
+          "anaph": 99.4,
+          "hour": 85.2,
+          "chron": 29.4
+        }
+      },
+      "topo_model": {
+        "expected_rmse": {
+          "anaph_deg": 6.78,
+          "hour_h": 0.7,
+          "chron_min": 23.6
+        },
+        "transcribable_pct": {
+          "anaph": 97.6,
+          "hour": 91.2,
+          "chron": 60.1
+        }
+      },
+      "ensemble": {
+        "expected_rmse": {
+          "anaph_deg": 1.6,
+          "hour_h": 0.7,
+          "chron_min": 23.6
+        },
+        "transcribable_pct": {
+          "anaph": 99.4,
+          "hour": 91.2,
+          "chron": 60.1
+        }
+      },
+      "rows_predicted": 360,
+      "note": "If encyclopaedia includes Handy Tables excerpts (likely): model applies to those pages. Non-HT astronomical tables: model incompatible."
+    },
+    "output_files": {
+      "flat": "manuscripts/vat_gr_198/predicted_tables/klima5_full_flat.tsv",
+      "topo": "manuscripts/vat_gr_198/predicted_tables/klima5_full_topo.tsv",
+      "ensemble": "manuscripts/vat_gr_198/predicted_tables/klima5_ensemble.tsv"
+    },
+    "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+  },
+  "Vat.pal.gr.278": {
+    "signum": "Vat.pal.gr.278",
+    "scan_date": "2026-05-17",
+    "manuscript_dir": "vat_pal_gr_278",
+    "applicable": true,
+    "model_confidence": "medium",
+    "table_types": [
+      "paradosis_argyros",
+      "handy_tables_derived"
+    ],
+    "klimata_present": [
+      5
+    ],
+    "klima5_folio_range": {
+      "start": "unknown",
+      "end": "unknown"
+    },
+    "confidence_scores": {
+      "applicable": true,
+      "confidence_level": "medium",
+      "adjustment_factor": 2.0,
+      "flat_model": {
+        "expected_rmse": {
+          "anaph_deg": 1.6,
+          "hour_h": 1.18,
+          "chron_min": 41.8
+        },
+        "transcribable_pct": {
+          "anaph": 99.4,
+          "hour": 85.2,
+          "chron": 29.4
+        }
+      },
+      "topo_model": {
+        "expected_rmse": {
+          "anaph_deg": 6.78,
+          "hour_h": 0.7,
+          "chron_min": 23.6
+        },
+        "transcribable_pct": {
+          "anaph": 97.6,
+          "hour": 91.2,
+          "chron": 60.1
+        }
+      },
+      "ensemble": {
+        "expected_rmse": {
+          "anaph_deg": 1.6,
+          "hour_h": 0.7,
+          "chron_min": 23.6
+        },
+        "transcribable_pct": {
+          "anaph": 99.4,
+          "hour": 91.2,
+          "chron": 60.1
+        }
+      },
+      "rows_predicted": 360,
+      "note": "Paradosis is a Handy Tables adaptation for Constantinople meridian. Oblique ascension values should be close to our Klima V predictions (same latitude). Mean motions and planetary equations differ. Expect higher residuals than for direct HT copies."
+    },
+    "output_files": {
+      "flat": "manuscripts/vat_pal_gr_278/predicted_tables/klima5_full_flat.tsv",
+      "topo": "manuscripts/vat_pal_gr_278/predicted_tables/klima5_full_topo.tsv",
+      "ensemble": "manuscripts/vat_pal_gr_278/predicted_tables/klima5_ensemble.tsv"
+    },
+    "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+  }
+}

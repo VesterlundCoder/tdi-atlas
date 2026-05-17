@@ -1,0 +1,332 @@
+{
+  "_comment": "Byzantine Astronomical Tables OTR Corpus — manuscript configuration",
+  "project": "Byzantine Astronomical Tables OTR Corpus",
+  "last_updated": "2026-05-17",
+
+  "models_trained_on": {
+    "manuscript": "Vat.gr.1291",
+    "table_type": "handy_tables_oblique_ascensions",
+    "klima": 5,
+    "klima_name": "Byzantium / Hellespont",
+    "lat_approx_deg": 41,
+    "longest_day_hours": 15,
+    "training_data_rows": 360,
+    "uncertain_rows_held_out": 76,
+    "training_rmse": {
+      "flat_model": {"anaph_deg": 0.80, "hour_h": 0.59, "chron_min": 20.9},
+      "topo_model": {"anaph_deg": 3.39, "hour_h": 0.35, "chron_min": 11.8}
+    },
+    "best_per_column": {
+      "anaph": "flat",
+      "hour": "topo",
+      "chron": "topo"
+    },
+    "ensemble_strategy": "flat for anaph; topo for hour and chron"
+  },
+
+  "handy_tables_klimata": [
+    {"klima": 1, "city": "Meroe",              "lat_deg": 16.4, "longest_day_h": 13.0},
+    {"klima": 2, "city": "Syene",              "lat_deg": 23.8, "longest_day_h": 13.5},
+    {"klima": 3, "city": "Lower Egypt",        "lat_deg": 30.4, "longest_day_h": 14.0},
+    {"klima": 4, "city": "Rhodes",             "lat_deg": 36.0, "longest_day_h": 14.5},
+    {"klima": 5, "city": "Byzantium",          "lat_deg": 41.0, "longest_day_h": 15.0},
+    {"klima": 6, "city": "Mid-Pontus",         "lat_deg": 45.0, "longest_day_h": 15.5},
+    {"klima": 7, "city": "Mouth of Borysthenes","lat_deg": 48.5, "longest_day_h": 16.0}
+  ],
+
+  "manuscripts": [
+
+    {
+      "signum": "Vat.gr.1291",
+      "dir": "vat_gr_1291",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1291/manifest.json",
+      "priority": 1,
+      "date_range": "9th century",
+      "script": "Greek majuscule (onciale)",
+      "language": "Greek",
+      "content_summary": "Ptolemy Handy Tables complete; stellar catalogues; illuminated star map",
+      "table_types": [
+        "handy_tables_oblique_ascensions",
+        "handy_tables_right_ascensions",
+        "handy_tables_declinations",
+        "handy_tables_solar_tables",
+        "almagest_star_catalogue"
+      ],
+      "klimata_present": [1, 2, 3, 4, 5, 6, 7],
+      "klima5_folio_range": {"start": "5r", "end": "7r", "note": "from training TSVs"},
+      "known_table_folios": "most of the manuscript; oblique ascensions begin early in codex",
+      "model_direct_apply": true,
+      "model_applies_to_klima5_only": true,
+      "model_confidence": "high",
+      "confidence_note": "Direct training source. Klima V oblique ascensions: flat RMSE~0.8° on anaph, topo RMSE~0.35h on hour.",
+      "status": "partial_transcription",
+      "transcribed_folios": ["5r", "5v", "6r"],
+      "scholarly_refs": [
+        "Tihon 1992 — Les Tables Faciles de Ptolémée (main reference)",
+        "Neugebauer 1975 — History of Ancient Mathematical Astronomy"
+      ]
+    },
+
+    {
+      "signum": "Vat.gr.1594",
+      "dir": "vat_gr_1594",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1594/manifest.json",
+      "priority": 3,
+      "date_range": "9th century",
+      "script": "Greek majuscule (onciale)",
+      "language": "Greek",
+      "content_summary": "Handy Tables; also contains Almagest portions",
+      "table_types": [
+        "handy_tables_oblique_ascensions",
+        "almagest_tables"
+      ],
+      "klimata_present": [1, 2, 3, 4, 5, 6, 7],
+      "klima5_folio_range": {"start": "unknown", "end": "unknown", "note": "requires manifest analysis"},
+      "known_table_folios": "unknown — requires download and inspection",
+      "model_direct_apply": true,
+      "model_applies_to_klima5_only": true,
+      "model_confidence": "high",
+      "confidence_note": "Same table type as training data; different 9th-century scribal hand.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Tihon 1992"]
+    },
+
+    {
+      "signum": "Vat.gr.208",
+      "dir": "vat_gr_208",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.208/manifest.json",
+      "priority": 2,
+      "date_range": "14th century",
+      "script": "Byzantine minuscule",
+      "language": "Greek",
+      "content_summary": "Handy Tables in later Byzantine hand",
+      "table_types": ["handy_tables_oblique_ascensions"],
+      "klimata_present": [1, 2, 3, 4, 5, 6, 7],
+      "klima5_folio_range": {"start": "unknown", "end": "unknown", "note": "requires manifest analysis"},
+      "known_table_folios": "unknown — requires download and inspection",
+      "model_direct_apply": true,
+      "model_applies_to_klima5_only": true,
+      "model_confidence": "high",
+      "confidence_note": "Same Ptolemaic values, different script. Cross-hand generalisation target.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Tihon 1992"]
+    },
+
+    {
+      "signum": "Vat.gr.184",
+      "dir": "vat_gr_184",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.184/manifest.json",
+      "priority": 2,
+      "date_range": "14th–15th century",
+      "script": "Byzantine minuscule",
+      "language": "Greek",
+      "content_summary": "Handy Tables + scholia by Theon",
+      "table_types": [
+        "handy_tables_oblique_ascensions",
+        "theon_scholia"
+      ],
+      "klimata_present": [1, 2, 3, 4, 5, 6, 7],
+      "klima5_folio_range": {"start": "unknown", "end": "unknown", "note": "requires manifest analysis"},
+      "known_table_folios": "unknown — requires download and inspection",
+      "model_direct_apply": true,
+      "model_applies_to_klima5_only": true,
+      "model_confidence": "high",
+      "confidence_note": "Table values identical to other HT manuscripts; scholia pages excluded from table scan.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Tihon 1992"]
+    },
+
+    {
+      "signum": "Vat.gr.211",
+      "dir": "vat_gr_211",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.211/manifest.json",
+      "priority": 2,
+      "date_range": "14th century",
+      "script": "Byzantine minuscule",
+      "language": "Greek",
+      "content_summary": "Handy Tables (partial) + Persian tables (Chrysokokkes tradition); mixed tradition manuscript",
+      "table_types": [
+        "handy_tables_oblique_ascensions",
+        "persian_byzantine_tables"
+      ],
+      "klimata_present": [1, 2, 3, 4, 5, 6, 7],
+      "klima5_folio_range": {"start": "unknown", "end": "unknown", "note": "only for HT portion"},
+      "known_table_folios": "unknown — requires download; HT and Persian sections must be distinguished",
+      "model_direct_apply": "partial",
+      "model_applies_to_klima5_only": true,
+      "model_confidence": "medium",
+      "confidence_note": "HT portion: model applies with high confidence. Persian portion: model incompatible (different mathematical basis, epoch 1068 AD).",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Bardi 2020 — Persische Astronomie in Byzanz"]
+    },
+
+    {
+      "signum": "Vat.gr.792",
+      "dir": "vat_gr_792",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.792/manifest.json",
+      "priority": 1,
+      "date_range": "ca. 1352 (autograph)",
+      "script": "Byzantine minuscule (author's hand — Meliteniotes)",
+      "language": "Greek",
+      "content_summary": "Tribiblos Astronomike by Theodore Meliteniotes — AUTOGRAPH. Persian-Byzantine astronomical tables throughout.",
+      "table_types": [
+        "persian_byzantine_tribiblos",
+        "mean_motion_tables",
+        "equation_tables",
+        "planetary_tables"
+      ],
+      "klimata_present": [],
+      "klima5_folio_range": null,
+      "known_table_folios": "tables throughout the codex (complete Tribiblos ~300+ ff.)",
+      "model_direct_apply": false,
+      "model_applies_to_klima5_only": false,
+      "model_confidence": "low",
+      "confidence_note": "Persian-Byzantine astronomical system (Shah Tables / Arjabhar). Different epoch, different mathematical basis. Models predict wrong absolute values. Can only verify tabular structure (monotonicity of cumulative columns, etc.).",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Bardi 2020", "Pingree 1964 — Gregory Chioniades and Palaeologan Astronomy"]
+    },
+
+    {
+      "signum": "Vat.gr.1058",
+      "dir": "vat_gr_1058",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1058/manifest.json",
+      "priority": 1,
+      "date_range": "14th century",
+      "script": "Byzantine minuscule",
+      "language": "Greek",
+      "content_summary": "Persian Syntaxis (Chrysokokkes, ca. 1347) at ff.130-142; other astronomical content",
+      "table_types": [
+        "persian_syntaxis_chrysokokkes",
+        "mean_motion_tables"
+      ],
+      "klimata_present": [],
+      "klima5_folio_range": null,
+      "known_table_folios": {"persian_syntaxis": "ff.130-142"},
+      "model_direct_apply": false,
+      "model_applies_to_klima5_only": false,
+      "model_confidence": "low",
+      "confidence_note": "Persian Syntaxis (Zij-based): different table structure, different epoch (1283 Yazdigird era), different mean motions. Models predict wrong values.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Bardi 2020 — signum U in stemma"]
+    },
+
+    {
+      "signum": "Vat.gr.1059",
+      "dir": "vat_gr_1059",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1059/manifest.json",
+      "priority": 1,
+      "date_range": "15th century",
+      "script": "Byzantine minuscule (secondary hand)",
+      "language": "Greek",
+      "content_summary": "Copy of Meliteniotes Tribiblos (same text as Vat.gr.792 but later hand)",
+      "table_types": [
+        "persian_byzantine_tribiblos",
+        "mean_motion_tables",
+        "equation_tables"
+      ],
+      "klimata_present": [],
+      "klima5_folio_range": null,
+      "known_table_folios": "tables throughout (mirrors 792 structure)",
+      "model_direct_apply": false,
+      "model_applies_to_klima5_only": false,
+      "model_confidence": "low",
+      "confidence_note": "Same Persian-Byzantine content as 792. Different scribal hand — valuable for cross-hand study of Persian tables.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Bardi 2020"]
+    },
+
+    {
+      "signum": "Vat.gr.1056",
+      "dir": "vat_gr_1056",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1056/manifest.json",
+      "priority": 2,
+      "date_range": "12th–13th century",
+      "script": "Byzantine minuscule",
+      "language": "Greek",
+      "content_summary": "Arabic-Greek astronomical tables; Arabic star lists in Greek; astrology-related computational tables",
+      "table_types": [
+        "arabo_byzantine_tables",
+        "arabic_star_lists_greek",
+        "astrological_tables"
+      ],
+      "klimata_present": [],
+      "klima5_folio_range": null,
+      "known_table_folios": "unknown — requires download and inspection",
+      "model_direct_apply": false,
+      "model_applies_to_klima5_only": false,
+      "model_confidence": "none",
+      "confidence_note": "Arabic-Greek astronomical tradition (likely Zij-based, 9th-12th c. Arabic sources). Entirely different from Ptolemaic Handy Tables. Models cannot predict values.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Acerbi 2016 — Byzantine Recensions of Greek Mathematical Texts"]
+    },
+
+    {
+      "signum": "Vat.gr.1047",
+      "dir": "vat_gr_1047",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1047/manifest.json",
+      "priority": 2,
+      "date_range": "14th century",
+      "script": "Byzantine minuscule",
+      "language": "Greek",
+      "content_summary": "Persian Syntaxis (Chrysokokkes) at ff.12-39v",
+      "table_types": ["persian_syntaxis_chrysokokkes"],
+      "klimata_present": [],
+      "klima5_folio_range": null,
+      "known_table_folios": {"persian_syntaxis": "ff.12-39v"},
+      "model_direct_apply": false,
+      "model_applies_to_klima5_only": false,
+      "model_confidence": "low",
+      "confidence_note": "Persian Syntaxis: same remarks as Vat.gr.1058. Signum T in Bardi stemma.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Bardi 2020 — signum T in stemma"]
+    },
+
+    {
+      "signum": "Vat.gr.198",
+      "dir": "vat_gr_198",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.198/manifest.json",
+      "priority": 3,
+      "date_range": "14th century",
+      "script": "Byzantine minuscule",
+      "language": "Greek",
+      "content_summary": "Malachias encyclopaedia — mix of mathematics, astronomy, philosophy; companion to Par.gr.2342",
+      "table_types": [
+        "astronomical_tables_mixed",
+        "theon_commentary_excerpts"
+      ],
+      "klimata_present": "unknown",
+      "klima5_folio_range": {"start": "unknown", "end": "unknown"},
+      "known_table_folios": "unknown — encyclopaedic content, tables interspersed throughout",
+      "model_direct_apply": "unknown",
+      "model_applies_to_klima5_only": true,
+      "model_confidence": "medium",
+      "confidence_note": "If encyclopaedia includes Handy Tables excerpts (likely): model applies to those pages. Non-HT astronomical tables: model incompatible.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Acerbi 2016"]
+    },
+
+    {
+      "signum": "Vat.pal.gr.278",
+      "dir": "vat_pal_gr_278",
+      "iiif_url": "https://digi.vatlib.it/iiif/MSS_Vat.pal.gr.278/manifest.json",
+      "priority": 3,
+      "date_range": "mid-15th century",
+      "script": "Byzantine minuscule",
+      "language": "Greek",
+      "content_summary": "Paradosis — adapted astronomical tables attributed to Isaac Argyros (ca. 1352); based on Handy Tables adapted for Constantinople meridian",
+      "table_types": [
+        "paradosis_argyros",
+        "handy_tables_derived"
+      ],
+      "klimata_present": [5],
+      "klima5_folio_range": {"start": "unknown", "end": "unknown"},
+      "known_table_folios": "unknown — requires download and inspection",
+      "model_direct_apply": "partial",
+      "model_applies_to_klima5_only": true,
+      "model_confidence": "medium",
+      "confidence_note": "Paradosis is a Handy Tables adaptation for Constantinople meridian. Oblique ascension values should be close to our Klima V predictions (same latitude). Mean motions and planetary equations differ. Expect higher residuals than for direct HT copies.",
+      "status": "not_downloaded",
+      "scholarly_refs": ["Acerbi 2016", "Neugebauer 1975"]
+    }
+  ]
+}

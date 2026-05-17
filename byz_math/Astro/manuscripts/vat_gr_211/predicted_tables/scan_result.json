@@ -1,0 +1,74 @@
+{
+  "signum": "Vat.gr.211",
+  "scan_date": "2026-05-17",
+  "manuscript_dir": "vat_gr_211",
+  "applicable": true,
+  "model_confidence": "medium",
+  "table_types": [
+    "handy_tables_oblique_ascensions",
+    "persian_byzantine_tables"
+  ],
+  "klimata_present": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "klima5_folio_range": {
+    "start": "unknown",
+    "end": "unknown",
+    "note": "only for HT portion"
+  },
+  "confidence_scores": {
+    "applicable": true,
+    "confidence_level": "medium",
+    "adjustment_factor": 2.0,
+    "flat_model": {
+      "expected_rmse": {
+        "anaph_deg": 1.6,
+        "hour_h": 1.18,
+        "chron_min": 41.8
+      },
+      "transcribable_pct": {
+        "anaph": 99.4,
+        "hour": 85.2,
+        "chron": 29.4
+      }
+    },
+    "topo_model": {
+      "expected_rmse": {
+        "anaph_deg": 6.78,
+        "hour_h": 0.7,
+        "chron_min": 23.6
+      },
+      "transcribable_pct": {
+        "anaph": 97.6,
+        "hour": 91.2,
+        "chron": 60.1
+      }
+    },
+    "ensemble": {
+      "expected_rmse": {
+        "anaph_deg": 1.6,
+        "hour_h": 0.7,
+        "chron_min": 23.6
+      },
+      "transcribable_pct": {
+        "anaph": 99.4,
+        "hour": 91.2,
+        "chron": 60.1
+      }
+    },
+    "rows_predicted": 360,
+    "note": "HT portion: model applies with high confidence. Persian portion: model incompatible (different mathematical basis, epoch 1068 AD)."
+  },
+  "output_files": {
+    "flat": "manuscripts/vat_gr_211/predicted_tables/klima5_full_flat.tsv",
+    "topo": "manuscripts/vat_gr_211/predicted_tables/klima5_full_topo.tsv",
+    "ensemble": "manuscripts/vat_gr_211/predicted_tables/klima5_ensemble.tsv"
+  },
+  "usage_note": "Compare [pred_*] values against actual image readings. When transcribing, mark uncertain cells [?] and run predict_table.py to fill them with model predictions."
+}

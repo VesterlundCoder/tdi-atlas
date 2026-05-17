@@ -1,0 +1,126 @@
+{
+  "downloaded_manifests": [
+    {
+      "signum": "Vat.gr.1291",
+      "dir": "vat_gr_1291",
+      "manifest_ok": true,
+      "n_canvases": 206,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.1594",
+      "dir": "vat_gr_1594",
+      "manifest_ok": true,
+      "n_canvases": 582,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.208",
+      "dir": "vat_gr_208",
+      "manifest_ok": true,
+      "n_canvases": 244,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.184",
+      "dir": "vat_gr_184",
+      "manifest_ok": true,
+      "n_canvases": 466,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.211",
+      "dir": "vat_gr_211",
+      "manifest_ok": true,
+      "n_canvases": 235,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.1058",
+      "dir": "vat_gr_1058",
+      "manifest_ok": true,
+      "n_canvases": 508,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.1059",
+      "dir": "vat_gr_1059",
+      "manifest_ok": true,
+      "n_canvases": 575,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.1056",
+      "dir": "vat_gr_1056",
+      "manifest_ok": true,
+      "n_canvases": 510,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.1047",
+      "dir": "vat_gr_1047",
+      "manifest_ok": true,
+      "n_canvases": 127,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    },
+    {
+      "signum": "Vat.gr.198",
+      "dir": "vat_gr_198",
+      "manifest_ok": true,
+      "n_canvases": 525,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": null
+    }
+  ],
+  "failed": [
+    {
+      "signum": "Vat.gr.792",
+      "dir": "vat_gr_792",
+      "manifest_ok": false,
+      "n_canvases": 0,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": "404 Client Error: Unknown Reason for url: https://digi.vatlib.it/iiif/MSS_Vat.gr.792/manifest.json"
+    },
+    {
+      "signum": "Vat.pal.gr.278",
+      "dir": "vat_pal_gr_278",
+      "manifest_ok": false,
+      "n_canvases": 0,
+      "n_table_pages": 0,
+      "images_downloaded": 0,
+      "images_failed": 0,
+      "error": "404 Client Error: Unknown Reason for url: https://digi.vatlib.it/iiif/MSS_Vat.pal.gr.278/manifest.json"
+    }
+  ]
+}
